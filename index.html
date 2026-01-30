@@ -35,15 +35,15 @@
   <meta name="twitter:image:alt" content="Canyon Crown Tree - Professional Tree Care in Salt Lake City">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
@@ -182,135 +182,66 @@
     "sameAs": [
       "https://www.facebook.com/canyoncrowntree",
       "https://www.instagram.com/canyoncrowntree",
-      "https://www.youtube.com/canyoncrowntree",
-      "https://www.yelp.com/biz/canyon-crown-tree-salt-lake-city"
+      "https://www.yelp.com/biz/canyon-crown-tree-salt-lake-city",
+      "https://g.page/canyoncrowntree"
     ]
   }
   </script>
 </head>
 
 <body>
+
   <!-- ============================================
-       SKIP NAVIGATION (Accessibility)
+       TOP BAR
   ============================================= -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <div class="top-bar-left">
+        <a href="tel:+18015551234"><i class="fas fa-phone"></i> (801) 555-1234</a>
+        <span>|</span>
+        <a href="mailto:info@canyoncrowntree.com"><i class="fas fa-envelope"></i> info@canyoncrowntree.com</a>
+        <span>|</span>
+        <span><i class="fas fa-clock"></i> Mon-Fri 8am-5pm, Sat 9am-2pm</span>
+      </div>
+      <div class="top-bar-right">
+        <span><i class="fas fa-bolt"></i> 24/7 Emergency: <a href="tel:+18015559111">(801) 555-9111</a></span>
+      </div>
+    </div>
+  </div>
 
   <!-- ============================================
        HEADER / NAVIGATION
   ============================================= -->
-  <header class="site-header" id="site-header" role="banner">
-    <!-- Top Bar -->
-    <div class="top-bar">
-      <div class="container top-bar__inner">
-        <div class="top-bar__contact">
-          <a href="tel:+18015551234" class="top-bar__phone" aria-label="Call us at (801) 555-1234">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            <span>(801) 555-1234</span>
-          </a>
-          <span class="top-bar__divider" aria-hidden="true">|</span>
-          <span class="top-bar__emergency">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="12" y1="8" x2="12" y2="12"/>
-              <line x1="12" y1="16" x2="12.01" y2="16"/>
-            </svg>
-            24/7 Emergency: <a href="tel:+18015559111" aria-label="Emergency line: (801) 555-9111">(801) 555-9111</a>
-          </span>
-        </div>
-        <div class="top-bar__social" aria-label="Social media links">
-          <a href="https://www.facebook.com/canyoncrowntree" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/canyoncrowntree" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://www.youtube.com/canyoncrowntree" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a2.997 2.997 0 0 0-2.112-2.12C19.505 3.546 12 3.546 12 3.546s-7.505 0-9.386.52A2.997 2.997 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.997 2.997 0 0 0 2.112 2.12c1.881.52 9.386.52 9.386.52s7.505 0 9.386-.52a2.997 2.997 0 0 0 2.112-2.12C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.546 15.568V8.432L15.818 12l-6.272 3.568z"/></svg>
-          </a>
-          <a href="https://www.yelp.com/biz/canyon-crown-tree-salt-lake-city" target="_blank" rel="noopener noreferrer" aria-label="Yelp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.271 9.321c-.376.625-1.15.396-1.15.396L5.202 7.39s-.735-.282-.537-.87c.042-.122.127-.237.283-.342L9.9 3.126s.454-.32.81-.126c.357.194.25.68.25.68l-1.69 5.641s.378.374 1.001 0zM10.135 12.688c.18-.65-.368-.905-.368-.905l-5.04-2.826s-.688-.406-.99-.01c-.064.082-.112.198-.125.363l-.307 5.195s-.037.555.365.657c.403.101.69-.384.69-.384l2.537-3.96s.41-.48 1.014-.13c.604.35.224 1 .224 1zM11.37 14.14c-.664-.13-.87.498-.87.498l-1.992 5.527s-.26.727.185.97c.092.05.216.078.378.065l5.2-.485s.554-.05.575-.49c.02-.44-.531-.57-.531-.57l-4.574-1.015s-.593-.09-.67-.745c-.076-.654.299-.755.299-.755zM14.236 13.07c.354.576-.125.99-.125.99l-1.966 1.516s.252.665.857.81c.604.146.93-.358.93-.358l3.19-4.074s.345-.435.068-.822c-.278-.388-.783-.147-.783-.147l-4.508 1.85s-.517.218-.418.85c.1.634.755.385.755.385zM13.144 11.252c.604.35.993-.136.993-.136l4.088-3.538s.54-.508.184-.95c-.074-.092-.189-.176-.36-.228l-4.975-1.6s-.533-.173-.807.215c-.274.389.124.754.124.754l2.277 4.127s.281.506-.115.856c-.397.35-.716-.004-.716-.004z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="/" class="logo">
+        <i class="fas fa-tree"></i>
+        <span>Canyon Crown Tree</span>
+      </a>
 
-    <!-- Main Navigation -->
-    <nav class="main-nav" role="navigation" aria-label="Primary navigation">
-      <div class="container main-nav__inner">
-        <!-- Logo -->
-        <a href="/" class="logo" aria-label="Canyon Crown Tree - Home">
-          <svg class="logo__icon" width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <!-- Tree Crown -->
-            <ellipse cx="24" cy="16" rx="14" ry="12" fill="#2D6A4F"/>
-            <ellipse cx="16" cy="18" rx="9" ry="8" fill="#40916C"/>
-            <ellipse cx="32" cy="18" rx="9" ry="8" fill="#40916C"/>
-            <ellipse cx="24" cy="13" rx="10" ry="9" fill="#52B788"/>
-            <!-- Trunk -->
-            <rect x="21" y="26" width="6" height="16" rx="2" fill="#774936"/>
-            <!-- Ground -->
-            <ellipse cx="24" cy="43" rx="10" ry="2" fill="#2D6A4F" opacity="0.3"/>
-          </svg>
-          <div class="logo__text">
-            <span class="logo__name">Canyon Crown</span>
-            <span class="logo__tagline">Tree</span>
-          </div>
-        </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="services/tree-removal.html">Tree Removal</a></li>
+            <li><a href="services/pruning-trimming.html">Pruning &amp; Trimming</a></li>
+            <li><a href="services/stump-grinding.html">Stump Grinding</a></li>
+            <li><a href="services/emergency-services.html">Emergency Services</a></li>
+            <li><a href="services/tree-health-care.html">Tree Health Care</a></li>
+            <li><a href="services/tree-planting.html">Tree Planting</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="nav-cta"><a href="contact.html#quote" class="btn btn-primary">Get Free Quote</a></li>
+      </ul>
 
-        <!-- Desktop Navigation Menu -->
-        <ul class="nav-menu" id="nav-menu" role="menubar">
-          <li class="nav-menu__item" role="none">
-            <a href="/" class="nav-menu__link nav-menu__link--active" role="menuitem" aria-current="page">Home</a>
-          </li>
-          <li class="nav-menu__item" role="none">
-            <a href="about.html" class="nav-menu__link" role="menuitem">About</a>
-          </li>
-          <li class="nav-menu__item nav-menu__item--dropdown" role="none">
-            <a href="services.html" class="nav-menu__link nav-menu__link--dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
-              Services
-              <svg class="nav-menu__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polyline points="6 9 12 15 18 9"/>
-              </svg>
-            </a>
-            <ul class="nav-dropdown" role="menu" aria-label="Services submenu">
-              <li role="none"><a href="services/tree-removal.html" class="nav-dropdown__link" role="menuitem">Tree Removal</a></li>
-              <li role="none"><a href="services/pruning-trimming.html" class="nav-dropdown__link" role="menuitem">Pruning &amp; Trimming</a></li>
-              <li role="none"><a href="services/stump-grinding.html" class="nav-dropdown__link" role="menuitem">Stump Grinding</a></li>
-              <li role="none"><a href="services/emergency-services.html" class="nav-dropdown__link" role="menuitem">Emergency Services</a></li>
-              <li role="none"><a href="services/tree-health-care.html" class="nav-dropdown__link" role="menuitem">Tree Health Care</a></li>
-              <li role="none"><a href="services/tree-planting.html" class="nav-dropdown__link" role="menuitem">Tree Planting</a></li>
-            </ul>
-          </li>
-          <li class="nav-menu__item" role="none">
-            <a href="gallery.html" class="nav-menu__link" role="menuitem">Gallery</a>
-          </li>
-          <li class="nav-menu__item" role="none">
-            <a href="blog.html" class="nav-menu__link" role="menuitem">Blog</a>
-          </li>
-          <li class="nav-menu__item" role="none">
-            <a href="contact.html" class="nav-menu__link" role="menuitem">Contact</a>
-          </li>
-        </ul>
-
-        <!-- Nav Actions -->
-        <div class="nav-actions">
-          <a href="tel:+18015551234" class="nav-actions__phone" aria-label="Call (801) 555-1234">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            <span>(801) 555-1234</span>
-          </a>
-          <a href="contact.html#quote" class="btn btn--primary nav-actions__cta">Get Free Quote</a>
-        </div>
-
-        <!-- Mobile Hamburger Menu Button -->
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
-          <span class="mobile-menu-toggle__bar" aria-hidden="true"></span>
-          <span class="mobile-menu-toggle__bar" aria-hidden="true"></span>
-          <span class="mobile-menu-toggle__bar" aria-hidden="true"></span>
-        </button>
-      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger"></span>
+      </button>
     </nav>
   </header>
 
@@ -320,695 +251,348 @@
   <main id="main-content">
 
     <!-- ==========================================
-         SECTION 1: HERO
+         HERO SECTION
     =========================================== -->
-    <section class="hero" id="hero" aria-label="Welcome to Canyon Crown Tree">
-      <div class="hero__overlay" aria-hidden="true"></div>
-      <div class="hero__bg" style="background-image: url('images/hero-bg.jpg');" role="img" aria-label="Professional tree care service in Salt Lake City with mountain backdrop"></div>
-      <div class="container hero__content">
-        <h1 class="hero__title">Professional Tree Care in Salt Lake City</h1>
-        <p class="hero__subtitle">ISA-certified arborists providing safe, expert tree removal, pruning, and care for Utah homeowners since 2010.</p>
-        <div class="hero__actions">
-          <a href="contact.html#quote" class="btn btn--primary btn--lg">Get Free Quote</a>
-          <a href="#services" class="btn btn--outline btn--lg">Our Services</a>
+    <section class="hero">
+      <div class="hero-bg" style="background-image: url('images/hero-bg.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Professional Tree Care for Salt Lake City</h1>
+        <p class="hero-subtitle">ISA-Certified Arborists Serving Utah Since 2010</p>
+        <p class="hero-text">Expert tree removal, pruning, and care from Salt Lake City's most trusted tree service company. Fully insured with $2M liability coverage.</p>
+        <div class="hero-buttons">
+          <a href="contact.html#quote" class="btn btn-primary btn-lg">Get Free Quote</a>
+          <a href="tel:+18015551234" class="btn btn-outline-light btn-lg"><i class="fas fa-phone"></i> Call (801) 555-1234</a>
         </div>
-        <p class="hero__trust">
-          <span>Fully Licensed &amp; Insured</span>
-          <span class="hero__trust-divider" aria-hidden="true">|</span>
-          <span>24/7 Emergency Service</span>
-        </p>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         SECTION 2: TRUST BADGES
-    =========================================== -->
-    <section class="trust-badges fade-in" aria-label="Why trust Canyon Crown Tree">
-      <div class="container">
-        <div class="trust-badges__grid">
-          <!-- Badge 1: ISA Certified -->
-          <div class="trust-badge" data-counter="isa">
-            <div class="trust-badge__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 15l-3.5 2 .9-3.9L6 10.3l4-.3L12 6.5l2 3.5 4 .3-3.4 2.8.9 3.9z"/>
-                <circle cx="12" cy="12" r="10"/>
-              </svg>
-            </div>
-            <span class="trust-badge__label">ISA Certified</span>
-            <span class="trust-badge__detail">Arborists</span>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <i class="fas fa-certificate"></i>
+            <span>ISA Certified</span>
           </div>
-
-          <!-- Badge 2: 5-Star Rated -->
-          <div class="trust-badge" data-counter="rating">
-            <div class="trust-badge__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-              </svg>
-            </div>
-            <span class="trust-badge__label">5-Star Rated</span>
-            <span class="trust-badge__detail">287+ Reviews</span>
+          <div class="trust-item">
+            <i class="fas fa-star"></i>
+            <span>5-Star Rated</span>
           </div>
-
-          <!-- Badge 3: 10,000+ Trees Served -->
-          <div class="trust-badge" data-counter="trees" data-count-target="10000">
-            <div class="trust-badge__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 20H7l5-16 5 16z"/>
-                <path d="M12 20v2"/>
-                <path d="M7 12h10"/>
-                <path d="M8.5 16h7"/>
-              </svg>
-            </div>
-            <span class="trust-badge__label"><span class="counter" data-target="10000">10,000</span>+</span>
-            <span class="trust-badge__detail">Trees Served</span>
-          </div>
-
-          <!-- Badge 4: 15+ Years Experience -->
-          <div class="trust-badge" data-counter="years" data-count-target="15">
-            <div class="trust-badge__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                <line x1="16" y1="2" x2="16" y2="6"/>
-                <line x1="8" y1="2" x2="8" y2="6"/>
-                <line x1="3" y1="10" x2="21" y2="10"/>
-                <path d="M8 14h.01"/>
-                <path d="M12 14h.01"/>
-                <path d="M16 14h.01"/>
-                <path d="M8 18h.01"/>
-                <path d="M12 18h.01"/>
-              </svg>
-            </div>
-            <span class="trust-badge__label"><span class="counter" data-target="15">15</span>+</span>
-            <span class="trust-badge__detail">Years Experience</span>
+          <div class="trust-item">
+            <i class="fas fa-calendar-check"></i>
+            <span>15+ Years Experience</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         SECTION 3: SERVICES OVERVIEW
+         INTRO / ABOUT SECTION
     =========================================== -->
-    <section class="services fade-in" id="services" aria-labelledby="services-heading">
+    <section class="section" id="about">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title" id="services-heading">Our Tree Care Services</h2>
-          <p class="section-header__subtitle">From routine pruning to emergency storm response, we handle it all.</p>
-        </div>
-
-        <div class="services__grid">
-          <!-- Service 1: Tree Removal -->
-          <div class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22V8"/>
-                <path d="M5 12H2l10-10 10 10h-3"/>
-                <path d="M8 22h8"/>
-                <line x1="2" y1="2" x2="22" y2="22" stroke-width="2" stroke="#dc3545"/>
-              </svg>
-            </div>
-            <h3 class="service-card__title">Tree Removal</h3>
-            <p class="service-card__description">Safe, efficient removal of hazardous, dead, or unwanted trees using state-of-the-art equipment and techniques.</p>
-            <a href="services/tree-removal.html" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </a>
+        <div class="intro-grid">
+          <div class="intro-image">
+            <img src="images/about-team.jpg" alt="Canyon Crown Tree team working on a tree care project in Salt Lake City">
+            <div class="intro-badge">15+ Years Experience</div>
           </div>
-
-          <!-- Service 2: Pruning & Trimming -->
-          <div class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="6" cy="6" r="3"/>
-                <path d="M8.12 8.12L12 12"/>
-                <path d="M20 4L8.12 15.88"/>
-                <circle cx="6" cy="18" r="3"/>
-                <path d="M14.8 14.8L20 20"/>
-              </svg>
-            </div>
-            <h3 class="service-card__title">Pruning &amp; Trimming</h3>
-            <p class="service-card__description">Expert crown thinning, deadwood removal, and structural pruning to promote tree health and safety.</p>
-            <a href="services/pruning-trimming.html" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Service 3: Stump Grinding -->
-          <div class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <ellipse cx="12" cy="18" rx="8" ry="4"/>
-                <path d="M12 14v-2"/>
-                <circle cx="12" cy="9" r="3"/>
-                <path d="M4 18c0-2 3.58-4 8-4s8 2 8 4"/>
-                <path d="M8 16l8 4"/>
-                <path d="M16 16l-8 4"/>
-              </svg>
-            </div>
-            <h3 class="service-card__title">Stump Grinding</h3>
-            <p class="service-card__description">Complete stump removal below ground level, leaving your yard clean and ready for new landscaping.</p>
-            <a href="services/stump-grinding.html" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Service 4: Emergency Services -->
-          <div class="service-card service-card--featured">
-            <div class="service-card__badge">24/7</div>
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-              </svg>
-            </div>
-            <h3 class="service-card__title">Emergency Services</h3>
-            <p class="service-card__description">Rapid response for storm damage, fallen trees, and hazardous situations. Available around the clock.</p>
-            <a href="services/emergency-services.html" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Service 5: Tree Health Care -->
-          <div class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                <path d="M12 5.67V12"/>
-                <path d="M9 9h6"/>
-              </svg>
-            </div>
-            <h3 class="service-card__title">Tree Health Care</h3>
-            <p class="service-card__description">Comprehensive disease diagnosis, pest management, deep root fertilization, and preventive care programs.</p>
-            <a href="services/tree-health-care.html" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Service 6: Tree Planting -->
-          <div class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22V12"/>
-                <path d="M12 12C12 8 8 4 4 4c0 4 4 8 8 8z"/>
-                <path d="M12 12c0-4 4-8 8-8 0 4-4 8-8 8z"/>
-                <path d="M7 22h10"/>
-              </svg>
-            </div>
-            <h3 class="service-card__title">Tree Planting</h3>
-            <p class="service-card__description">Expert species selection and professional planting tailored to Utah's climate and your property's unique needs.</p>
-            <a href="services/tree-planting.html" class="service-card__link">
-              Learn More
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         SECTION 4: ABOUT PREVIEW
-    =========================================== -->
-    <section class="about-preview fade-in" id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="about-preview__grid">
-          <!-- Left: Image -->
-          <div class="about-preview__image-wrapper">
-            <div class="about-preview__image" style="background-image: url('images/about-team.jpg');" role="img" aria-label="Canyon Crown Tree team working on a tree care project in Salt Lake City"></div>
-            <div class="about-preview__experience-badge" aria-hidden="true">
-              <span class="about-preview__experience-number">15+</span>
-              <span class="about-preview__experience-text">Years of<br>Experience</span>
-            </div>
-          </div>
-
-          <!-- Right: Content -->
-          <div class="about-preview__content">
-            <span class="section-label">About Us</span>
-            <h2 class="about-preview__title" id="about-heading">Salt Lake City's Most Trusted Arborists</h2>
-            <p class="about-preview__text">Founded in 2010 by Alex Rivera, an ISA-Certified Arborist with over 15 years of experience, Canyon Crown Tree has grown into one of the Wasatch Front's most trusted tree care companies. We combine deep knowledge of Utah's native and ornamental tree species with industry-leading equipment and safety protocols.</p>
-            <p class="about-preview__text">Our team of certified professionals is committed to preserving the health and beauty of your trees while ensuring the safety of your property. Every job we take on reflects our core values: expertise, integrity, and environmental stewardship.</p>
-
-            <ul class="about-preview__features" role="list">
-              <li class="about-preview__feature">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>ISA Certified Arborists</span>
-              </li>
-              <li class="about-preview__feature">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>Fully Licensed &amp; Insured</span>
-              </li>
-              <li class="about-preview__feature">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>Eco-Friendly Practices</span>
-              </li>
-              <li class="about-preview__feature">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-                <span>Free Estimates</span>
-              </li>
+          <div class="intro-content">
+            <span class="section-label">Welcome to Canyon Crown Tree</span>
+            <h2>Salt Lake City's Trusted Tree Care Experts</h2>
+            <p class="lead">Founded in 2010 by Alex Rivera, an ISA-Certified Arborist with a forestry degree from Utah State University, Canyon Crown Tree has grown into one of the Wasatch Front's most respected tree care companies. We combine deep knowledge of Utah's native and ornamental tree species with industry-leading equipment and safety protocols.</p>
+            <p>Our team of certified professionals is committed to preserving the health and beauty of your trees while ensuring the safety of your property. Every job reflects our core values: expertise, integrity, and environmental stewardship.</p>
+            <ul class="credentials-list">
+              <li><i class="fas fa-check-circle"></i> ISA Certified Arborist</li>
+              <li><i class="fas fa-check-circle"></i> $2M Liability Insurance</li>
+              <li><i class="fas fa-check-circle"></i> 24/7 Emergency Response</li>
             </ul>
-
-            <a href="about.html" class="btn btn--primary">Learn More About Us</a>
+            <a href="about.html" class="btn btn-primary">Learn More About Us <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         SECTION 5: WHY CHOOSE US
+         SERVICES SECTION
     =========================================== -->
-    <section class="why-choose fade-in" id="why-choose" aria-labelledby="why-choose-heading">
+    <section class="section section-gray" id="services">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-header__title" id="why-choose-heading">Why Choose Canyon Crown Tree</h2>
-          <p class="section-header__subtitle">We go above and beyond to deliver exceptional tree care you can count on.</p>
+          <span class="section-label">What We Do</span>
+          <h2>Our Tree Care Services</h2>
+          <p class="section-subtitle">From routine pruning to emergency storm response, we handle it all with certified expertise.</p>
         </div>
 
-        <div class="why-choose__grid">
-          <!-- Item 1: Certified Arborists -->
-          <div class="why-choose__item">
-            <div class="why-choose__icon" aria-hidden="true">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 15l-3.5 2 .9-3.9L6 10.3l4-.3L12 6.5l2 3.5 4 .3-3.4 2.8.9 3.9z"/>
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M8 21v-1a4 4 0 0 1 8 0v1"/>
-              </svg>
+        <div class="services-categories">
+          <!-- Category 1: Tree Removal Services -->
+          <div class="service-category">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-tree"></i></div>
+              <h3>Tree Removal Services</h3>
             </div>
-            <h3 class="why-choose__title">Certified Arborists</h3>
-            <p class="why-choose__description">Our team holds ISA certifications, ensuring every decision is backed by science-based arboricultural knowledge and best practices.</p>
+            <ul class="service-list">
+              <li><a href="services/tree-removal.html"><i class="fas fa-check"></i> Tree Removal</a></li>
+              <li><a href="services/tree-removal.html#hazardous"><i class="fas fa-check"></i> Hazardous Tree Assessment</a></li>
+              <li><a href="services/tree-removal.html#crane"><i class="fas fa-check"></i> Crane-Assisted Removal</a></li>
+              <li><a href="services/emergency-services.html"><i class="fas fa-check"></i> Emergency Removal</a></li>
+            </ul>
+            <a href="services/tree-removal.html" class="btn btn-secondary">Learn More <i class="fas fa-arrow-right"></i></a>
           </div>
 
-          <!-- Item 2: 24/7 Emergency Response -->
-          <div class="why-choose__item">
-            <div class="why-choose__icon" aria-hidden="true">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
+          <!-- Category 2: Tree Care & Maintenance -->
+          <div class="service-category">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-leaf"></i></div>
+              <h3>Tree Care &amp; Maintenance</h3>
             </div>
-            <h3 class="why-choose__title">24/7 Emergency Response</h3>
-            <p class="why-choose__description">Storms don't wait, and neither do we. Our emergency crew is on call around the clock for urgent tree situations.</p>
+            <ul class="service-list">
+              <li><a href="services/pruning-trimming.html"><i class="fas fa-check"></i> Pruning &amp; Trimming</a></li>
+              <li><a href="services/tree-health-care.html"><i class="fas fa-check"></i> Tree Health Care</a></li>
+              <li><a href="services/tree-health-care.html#fertilization"><i class="fas fa-check"></i> Deep Root Fertilization</a></li>
+              <li><a href="services/tree-planting.html"><i class="fas fa-check"></i> Tree Planting</a></li>
+            </ul>
+            <a href="services/pruning-trimming.html" class="btn btn-secondary">Learn More <i class="fas fa-arrow-right"></i></a>
           </div>
 
-          <!-- Item 3: Free Estimates -->
-          <div class="why-choose__item">
-            <div class="why-choose__icon" aria-hidden="true">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
-                <polyline points="10 9 9 9 8 9"/>
-              </svg>
+          <!-- Category 3: Stump & Emergency -->
+          <div class="service-category">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-bolt"></i></div>
+              <h3>Stump &amp; Emergency</h3>
             </div>
-            <h3 class="why-choose__title">Free Estimates</h3>
-            <p class="why-choose__description">No surprises. We provide detailed, transparent estimates before any work begins so you know exactly what to expect.</p>
-          </div>
-
-          <!-- Item 4: Fully Insured -->
-          <div class="why-choose__item">
-            <div class="why-choose__icon" aria-hidden="true">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <polyline points="9 12 11 14 15 10"/>
-              </svg>
-            </div>
-            <h3 class="why-choose__title">Fully Insured ($2M Coverage)</h3>
-            <p class="why-choose__description">Your property is protected with our comprehensive $2 million liability insurance policy for complete peace of mind.</p>
-          </div>
-
-          <!-- Item 5: Eco-Friendly Practices -->
-          <div class="why-choose__item">
-            <div class="why-choose__icon" aria-hidden="true">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22V12"/>
-                <path d="M12 12C12 8 8 4 4 4c0 4 4 8 8 8z"/>
-                <path d="M12 12c0-4 4-8 8-8 0 4-4 8-8 8z"/>
-              </svg>
-            </div>
-            <h3 class="why-choose__title">Eco-Friendly Practices</h3>
-            <p class="why-choose__description">We recycle 100% of tree waste into mulch and firewood, minimizing landfill impact and giving back to the community.</p>
-          </div>
-
-          <!-- Item 6: Satisfaction Guaranteed -->
-          <div class="why-choose__item">
-            <div class="why-choose__icon" aria-hidden="true">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M7.5 4.27l-.71-.03a2 2 0 0 0-2.07 1.58L3.2 12.24a2 2 0 0 0 1.95 2.43h2.32a1 1 0 0 1 .98 1.21l-.72 3.63a1.17 1.17 0 0 0 2.09.86l5.6-7.03a1 1 0 0 0-.78-1.63h-2.08a1 1 0 0 1-.96-1.27L13.1 5a2 2 0 0 0-1.93-2.51l-3.67.02z"/>
-              </svg>
-            </div>
-            <h3 class="why-choose__title">Satisfaction Guaranteed</h3>
-            <p class="why-choose__description">We stand behind every job. If you're not 100% satisfied with our work, we'll make it right -- that's our promise to you.</p>
+            <ul class="service-list">
+              <li><a href="services/stump-grinding.html"><i class="fas fa-check"></i> Stump Grinding</a></li>
+              <li><a href="services/emergency-services.html"><i class="fas fa-check"></i> Emergency Services (24/7)</a></li>
+              <li><a href="services/emergency-services.html#storm"><i class="fas fa-check"></i> Storm Damage Cleanup</a></li>
+              <li><a href="services/emergency-services.html#insurance"><i class="fas fa-check"></i> Insurance Documentation</a></li>
+            </ul>
+            <a href="services/emergency-services.html" class="btn btn-secondary">Learn More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         SECTION 6: TESTIMONIALS
+         WHY CHOOSE US SECTION
     =========================================== -->
-    <section class="testimonials fade-in" id="testimonials" aria-labelledby="testimonials-heading">
+    <section class="section" id="why-choose">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-header__title" id="testimonials-heading">What Our Customers Say</h2>
-          <p class="section-header__subtitle">Don't just take our word for it -- hear from homeowners across Salt Lake City.</p>
+          <span class="section-label">Why Us</span>
+          <h2>Why Choose Canyon Crown Tree</h2>
+          <p class="section-subtitle">We go above and beyond to deliver exceptional tree care you can count on.</p>
         </div>
 
-        <div class="testimonials__grid">
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+            <h3>ISA Certified Arborists</h3>
+            <p>Our team holds ISA certifications, ensuring every decision is backed by science-based arboricultural knowledge and best practices.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>$2M Fully Insured</h3>
+            <p>Your property is protected with our comprehensive $2 million liability insurance policy for complete peace of mind.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+            <h3>24/7 Emergency Response</h3>
+            <p>Storms don't wait, and neither do we. Our emergency crew is on call around the clock for urgent tree situations.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+            <h3>Free Estimates</h3>
+            <p>No surprises. We provide detailed, transparent estimates before any work begins so you know exactly what to expect.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+            <h3>Eco-Friendly Practices</h3>
+            <p>We recycle 100% of tree waste into mulch and firewood, minimizing landfill impact and giving back to the community.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon"><i class="fas fa-thumbs-up"></i></div>
+            <h3>Satisfaction Guaranteed</h3>
+            <p>We stand behind every job. If you're not 100% satisfied with our work, we'll make it right -- that's our promise to you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TESTIMONIALS SECTION
+    =========================================== -->
+    <section class="section section-gray" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Testimonials</span>
+          <h2>What Our Customers Say</h2>
+          <p class="section-subtitle">Don't just take our word for it -- hear from homeowners across the Wasatch Front.</p>
+        </div>
+
+        <div class="testimonials-slider">
           <!-- Testimonial 1 -->
-          <article class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-            <blockquote class="testimonial-card__quote">
-              <p>"Canyon Crown Tree removed a massive cottonwood that was threatening our roof. Alex and his team were incredibly professional, completed the job in one day, and left our yard spotless. I wouldn't trust anyone else with our trees."</p>
-            </blockquote>
-            <footer class="testimonial-card__author">
-              <div class="testimonial-card__avatar" aria-hidden="true">MJ</div>
-              <div class="testimonial-card__info">
-                <cite class="testimonial-card__name">Mark Johnson</cite>
-                <span class="testimonial-card__location">Holladay, UT</span>
-                <span class="testimonial-card__service">Tree Removal</span>
+            <p class="testimonial-text">"Canyon Crown Tree removed a massive cottonwood that was threatening our roof. Alex and his team were incredibly professional, completed the job in one day, and left our yard spotless. I wouldn't trust anyone else with our trees."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <span class="author-name">Sarah Mitchell</span>
+                <span class="author-procedure">Tree Removal</span>
+                <span class="author-location">Holladay, UT</span>
               </div>
-            </footer>
-          </article>
+            </div>
+          </div>
 
           <!-- Testimonial 2 -->
-          <article class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-            <blockquote class="testimonial-card__quote">
-              <p>"After a brutal windstorm took down a huge limb across our driveway, Canyon Crown was there within an hour. Their emergency response is second to none. They even came back the next week to check on the remaining tree's health. Truly outstanding service."</p>
-            </blockquote>
-            <footer class="testimonial-card__author">
-              <div class="testimonial-card__avatar" aria-hidden="true">SP</div>
-              <div class="testimonial-card__info">
-                <cite class="testimonial-card__name">Sarah Peterson</cite>
-                <span class="testimonial-card__location">Salt Lake City, UT</span>
-                <span class="testimonial-card__service">Emergency Services</span>
+            <p class="testimonial-text">"We hired Canyon Crown to prune and shape our large silver maple. The transformation was incredible -- our property looks completely refreshed. Alex even gave us a detailed health report on the tree. Fair pricing and top-notch work."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <span class="author-name">David Chen</span>
+                <span class="author-procedure">Pruning &amp; Trimming</span>
+                <span class="author-location">Sandy, UT</span>
               </div>
-            </footer>
-          </article>
-
-          <!-- Testimonial 3 -->
-          <article class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="#F4A623" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
-            <blockquote class="testimonial-card__quote">
-              <p>"We hired Canyon Crown to prune and shape all the trees in our front and back yards. The transformation was incredible! Our property looks completely refreshed. Alex even gave us a health report on each tree. Fair pricing and top-notch work."</p>
-            </blockquote>
-            <footer class="testimonial-card__author">
-              <div class="testimonial-card__avatar" aria-hidden="true">DW</div>
-              <div class="testimonial-card__info">
-                <cite class="testimonial-card__name">David &amp; Lisa Wang</cite>
-                <span class="testimonial-card__location">Sandy, UT</span>
-                <span class="testimonial-card__service">Pruning &amp; Trimming</span>
-              </div>
-            </footer>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         SECTION 7: GALLERY PREVIEW
-    =========================================== -->
-    <section class="gallery-preview fade-in" id="gallery" aria-labelledby="gallery-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title" id="gallery-heading">See Our Work</h2>
-          <p class="section-header__subtitle">Browse recent projects from across the Salt Lake City area.</p>
-        </div>
-
-        <div class="gallery-preview__grid">
-          <!-- Gallery Item 1 -->
-          <a href="gallery.html#tree-removal" class="gallery-card" aria-label="View tree removal project gallery">
-            <div class="gallery-card__image" style="background-image: url('images/gallery/gallery-removal-01.jpg');" role="img" aria-label="Large tree removal project in Salt Lake City"></div>
-            <div class="gallery-card__overlay">
-              <span class="gallery-card__category">Tree Removal</span>
-              <span class="gallery-card__label">View Project</span>
-            </div>
-          </a>
-
-          <!-- Gallery Item 2 -->
-          <a href="gallery.html#pruning" class="gallery-card" aria-label="View pruning and shaping project gallery">
-            <div class="gallery-card__image" style="background-image: url('images/gallery/gallery-pruning-01.jpg');" role="img" aria-label="Professional tree pruning and shaping project"></div>
-            <div class="gallery-card__overlay">
-              <span class="gallery-card__category">Pruning &amp; Shaping</span>
-              <span class="gallery-card__label">View Project</span>
-            </div>
-          </a>
-
-          <!-- Gallery Item 3 -->
-          <a href="gallery.html#stump-grinding" class="gallery-card" aria-label="View stump grinding project gallery">
-            <div class="gallery-card__image" style="background-image: url('images/gallery/gallery-stump-01.jpg');" role="img" aria-label="Stump grinding and yard cleanup project"></div>
-            <div class="gallery-card__overlay">
-              <span class="gallery-card__category">Stump Grinding</span>
-              <span class="gallery-card__label">View Project</span>
-            </div>
-          </a>
-
-          <!-- Gallery Item 4 -->
-          <a href="gallery.html#emergency" class="gallery-card" aria-label="View emergency storm response project gallery">
-            <div class="gallery-card__image" style="background-image: url('images/gallery/gallery-emergency-01.jpg');" role="img" aria-label="Emergency storm damage tree removal"></div>
-            <div class="gallery-card__overlay">
-              <span class="gallery-card__category">Storm Response</span>
-              <span class="gallery-card__label">View Project</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="gallery-preview__action">
-          <a href="gallery.html" class="btn btn--outline">View Full Gallery</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         SECTION 8: BLOG PREVIEW
-    =========================================== -->
-    <section class="blog-preview fade-in" id="blog" aria-labelledby="blog-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title" id="blog-heading">Tree Care Tips &amp; Insights</h2>
-          <p class="section-header__subtitle">Stay informed with expert advice from our certified arborists.</p>
-        </div>
-
-        <div class="blog-preview__grid">
-          <!-- Blog Post 1 -->
-          <article class="blog-card">
-            <a href="blog/how-to-spot-hazardous-trees.html" class="blog-card__image-link" aria-label="Read: How to Spot Hazardous Trees on Your Property">
-              <div class="blog-card__image" style="background-image: url('images/blog/blog-hazardous-trees.jpg');" role="img" aria-label="A large tree with visible signs of decay and structural weakness"></div>
-            </a>
-            <div class="blog-card__content">
-              <div class="blog-card__meta">
-                <time datetime="2025-01-15" class="blog-card__date">January 15, 2025</time>
-                <span class="blog-card__category">Tree Safety</span>
-              </div>
-              <h3 class="blog-card__title">
-                <a href="blog/how-to-spot-hazardous-trees.html">How to Spot Hazardous Trees on Your Property</a>
-              </h3>
-              <p class="blog-card__excerpt">Learn the warning signs of a dangerous tree before it becomes a threat to your home, family, or neighbors. From leaning trunks to fungal growth, here's what to watch for.</p>
-              <a href="blog/how-to-spot-hazardous-trees.html" class="blog-card__link">
-                Read More
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12"/>
-                  <polyline points="12 5 19 12 12 19"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Blog Post 2 -->
-          <article class="blog-card">
-            <a href="blog/winter-tree-care-tips-utah.html" class="blog-card__image-link" aria-label="Read: Winter Tree Care Tips for Utah Homeowners">
-              <div class="blog-card__image" style="background-image: url('images/blog/blog-winter-care.jpg');" role="img" aria-label="Snow-covered trees in a Utah winter landscape"></div>
-            </a>
-            <div class="blog-card__content">
-              <div class="blog-card__meta">
-                <time datetime="2024-12-01" class="blog-card__date">December 1, 2024</time>
-                <span class="blog-card__category">Seasonal Care</span>
-              </div>
-              <h3 class="blog-card__title">
-                <a href="blog/winter-tree-care-tips-utah.html">Winter Tree Care Tips for Utah Homeowners</a>
-              </h3>
-              <p class="blog-card__excerpt">Utah winters can be harsh on your trees. Discover essential steps to protect your landscape from heavy snow, ice damage, and freezing temperatures this season.</p>
-              <a href="blog/winter-tree-care-tips-utah.html" class="blog-card__link">
-                Read More
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12"/>
-                  <polyline points="12 5 19 12 12 19"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- Blog Post 3 -->
-          <article class="blog-card">
-            <a href="blog/top-10-trees-for-utah-landscapes.html" class="blog-card__image-link" aria-label="Read: Top 10 Trees for Utah Landscapes">
-              <div class="blog-card__image" style="background-image: url('images/blog/blog-utah-trees.jpg');" role="img" aria-label="Beautiful mature trees in a well-maintained Utah yard"></div>
-            </a>
-            <div class="blog-card__content">
-              <div class="blog-card__meta">
-                <time datetime="2024-10-20" class="blog-card__date">October 20, 2024</time>
-                <span class="blog-card__category">Tree Planting</span>
-              </div>
-              <h3 class="blog-card__title">
-                <a href="blog/top-10-trees-for-utah-landscapes.html">Top 10 Trees for Utah Landscapes</a>
-              </h3>
-              <p class="blog-card__excerpt">Choosing the right tree for your yard is crucial. Our arborists share the top 10 tree species that thrive in Utah's unique climate, soil, and water conditions.</p>
-              <a href="blog/top-10-trees-for-utah-landscapes.html" class="blog-card__link">
-                Read More
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12"/>
-                  <polyline points="12 5 19 12 12 19"/>
-                </svg>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         SECTION 9: CTA BANNER
-    =========================================== -->
-    <section class="cta-banner fade-in" id="cta" aria-labelledby="cta-heading">
-      <div class="container cta-banner__inner">
-        <div class="cta-banner__content">
-          <h2 class="cta-banner__title" id="cta-heading">Ready to Transform Your Landscape?</h2>
-          <p class="cta-banner__text">Get your free, no-obligation estimate from our certified arborists today.</p>
-        </div>
-        <div class="cta-banner__actions">
-          <a href="tel:+18015551234" class="btn btn--white btn--lg cta-banner__phone">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            (801) 555-1234
-          </a>
-          <a href="contact.html#quote" class="btn btn--outline-white btn--lg">Request Free Quote</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         SECTION 10: SERVICE AREA
-    =========================================== -->
-    <section class="service-area fade-in" id="service-area" aria-labelledby="service-area-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title" id="service-area-heading">Proudly Serving the Wasatch Front</h2>
-          <p class="section-header__subtitle">From Bountiful to Draper and everywhere in between, we're your local tree care experts.</p>
-        </div>
-
-        <div class="service-area__grid">
-          <!-- Cities List -->
-          <div class="service-area__cities">
-            <h3 class="service-area__subtitle">Our Service Areas Include:</h3>
-            <ul class="service-area__list" role="list">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Salt Lake City
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Sandy
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Draper
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Murray
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Cottonwood Heights
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Holladay
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Millcreek
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                South Jordan
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                West Jordan
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Taylorsville
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Park City
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Bountiful
-              </li>
-            </ul>
           </div>
 
-          <!-- Google Maps Embed -->
-          <div class="service-area__map">
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"A midnight storm brought a huge limb crashing across our driveway. Canyon Crown was there within the hour -- at 2 AM! Their emergency response is second to none. They even came back the next week to check on the remaining tree's health."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <span class="author-name">Jennifer Patel</span>
+                <span class="author-procedure">Emergency Services</span>
+                <span class="author-location">Salt Lake City, UT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         GALLERY SECTION
+    =========================================== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Work</span>
+          <h2>See Our Work</h2>
+          <p class="section-subtitle">Browse recent projects from across the Salt Lake City area.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/gallery/gallery-removal-01.jpg" alt="Before and after tree removal project" class="gallery-image">
+            <div class="gallery-label">Before &amp; After</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/gallery-removal-02.jpg" alt="Crane-assisted tree removal" class="gallery-image">
+            <div class="gallery-label">Crane Removal</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/gallery-pruning-01.jpg" alt="Aerial view of tree pruning" class="gallery-image">
+            <div class="gallery-label">Aerial View</div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery/gallery-emergency-01.jpg" alt="Emergency storm response cleanup" class="gallery-image">
+            <div class="gallery-label">Storm Response</div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="gallery.html" class="btn btn-outline">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SERVICE AREA SECTION
+    =========================================== -->
+    <section class="section section-gray" id="service-area">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Service Area</span>
+          <h2>Serving the Wasatch Front</h2>
+          <p class="section-subtitle">From Bountiful to Draper and everywhere in between, we're your local tree care experts.</p>
+        </div>
+
+        <div class="intro-grid">
+          <div class="intro-content">
+            <h3>Get in Touch</h3>
+            <ul class="credentials-list">
+              <li><i class="fas fa-map-marker-alt"></i> 123 Canyon Rd, Salt Lake City, UT 84101</li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+18015551234">(801) 555-1234</a></li>
+              <li><i class="fas fa-exclamation-triangle"></i> Emergency: <a href="tel:+18015559111">(801) 555-9111</a></li>
+              <li><i class="fas fa-clock"></i> Mon-Fri 8am-5pm, Sat 9am-2pm</li>
+            </ul>
+
+            <div class="features-grid" style="margin-top: 2rem;">
+              <div class="feature">
+                <div class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                <h3>Free On-Site Estimates</h3>
+              </div>
+              <div class="feature">
+                <div class="feature-icon"><i class="fas fa-id-card"></i></div>
+                <h3>Fully Licensed</h3>
+              </div>
+              <div class="feature">
+                <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                <h3>Eco-Friendly</h3>
+              </div>
+              <div class="feature">
+                <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Same-Day Quotes</h3>
+              </div>
+            </div>
+          </div>
+          <div class="intro-image">
             <iframe
               title="Canyon Crown Tree service area map showing Salt Lake City, Utah"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193438.08987985873!2d-111.99714768693702!3d40.75888734388085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f508b1b8bdc7%3A0xdb7152e14dbb2a47!2sSalt%20Lake%20City%2C%20UT!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
               width="100%"
               height="450"
-              style="border:0;"
+              style="border:0; border-radius: 8px;"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CTA SECTION
+    =========================================== -->
+    <section class="cta section-dark" id="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Property?</h2>
+          <p>Contact our ISA-certified arborists today for a free, no-obligation estimate. We'll assess your trees and provide a detailed plan tailored to your property's needs.</p>
+          <div class="cta-buttons">
+            <a href="contact.html#quote" class="btn btn-white btn-lg">Get Free Quote <i class="fas fa-arrow-right"></i></a>
+            <a href="tel:+18015551234" class="btn btn-outline-light btn-lg"><i class="fas fa-phone"></i> Call (801) 555-1234</a>
           </div>
         </div>
       </div>
@@ -1019,137 +603,78 @@
   <!-- ============================================
        FOOTER
   ============================================= -->
-  <footer class="site-footer" role="contentinfo">
+  <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
+      <div class="footer-grid">
         <!-- Column 1: About -->
-        <div class="footer__column">
-          <a href="/" class="footer__logo" aria-label="Canyon Crown Tree - Home">
-            <svg class="footer__logo-icon" width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <ellipse cx="24" cy="16" rx="14" ry="12" fill="#52B788"/>
-              <ellipse cx="16" cy="18" rx="9" ry="8" fill="#40916C"/>
-              <ellipse cx="32" cy="18" rx="9" ry="8" fill="#40916C"/>
-              <ellipse cx="24" cy="13" rx="10" ry="9" fill="#52B788"/>
-              <rect x="21" y="26" width="6" height="16" rx="2" fill="#774936"/>
-            </svg>
-            <span class="footer__logo-text">Canyon Crown Tree</span>
+        <div class="footer-about">
+          <a href="/" class="logo">
+            <i class="fas fa-tree"></i>
+            <span>Canyon Crown Tree</span>
           </a>
-          <p class="footer__about-text">Expert tree care for Utah's landscapes since 2010. ISA-certified arborists providing safe, professional tree services across the Wasatch Front.</p>
-          <div class="footer__social" aria-label="Follow us on social media">
-            <a href="https://www.facebook.com/canyoncrowntree" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="https://www.instagram.com/canyoncrowntree" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="https://www.youtube.com/canyoncrowntree" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer__social-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a2.997 2.997 0 0 0-2.112-2.12C19.505 3.546 12 3.546 12 3.546s-7.505 0-9.386.52A2.997 2.997 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.997 2.997 0 0 0 2.112 2.12c1.881.52 9.386.52 9.386.52s7.505 0 9.386-.52a2.997 2.997 0 0 0 2.112-2.12C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.546 15.568V8.432L15.818 12l-6.272 3.568z"/></svg>
-            </a>
-            <a href="https://www.yelp.com/biz/canyon-crown-tree-salt-lake-city" target="_blank" rel="noopener noreferrer" aria-label="Yelp" class="footer__social-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.271 9.321c-.376.625-1.15.396-1.15.396L5.202 7.39s-.735-.282-.537-.87c.042-.122.127-.237.283-.342L9.9 3.126s.454-.32.81-.126c.357.194.25.68.25.68l-1.69 5.641s.378.374 1.001 0z"/></svg>
-            </a>
+          <p>Expert tree care for Utah's landscapes since 2010. ISA-certified arborists providing safe, professional tree services across the Wasatch Front.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/canyoncrowntree" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/canyoncrowntree" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.yelp.com/biz/canyon-crown-tree-salt-lake-city" target="_blank" rel="noopener noreferrer" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+            <a href="https://g.page/canyoncrowntree" target="_blank" rel="noopener noreferrer" aria-label="Google"><i class="fab fa-google"></i></a>
           </div>
         </div>
 
         <!-- Column 2: Quick Links -->
-        <div class="footer__column">
-          <h3 class="footer__heading">Quick Links</h3>
-          <nav aria-label="Footer quick links">
-            <ul class="footer__links" role="list">
-              <li><a href="/">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="contact.html#quote">Free Estimate</a></li>
-              <li><a href="careers.html">Careers</a></li>
-            </ul>
-          </nav>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
         <!-- Column 3: Our Services -->
-        <div class="footer__column">
-          <h3 class="footer__heading">Our Services</h3>
-          <nav aria-label="Footer services links">
-            <ul class="footer__links" role="list">
-              <li><a href="services/tree-removal.html">Tree Removal</a></li>
-              <li><a href="services/pruning-trimming.html">Pruning &amp; Trimming</a></li>
-              <li><a href="services/stump-grinding.html">Stump Grinding</a></li>
-              <li><a href="services/emergency-services.html">Emergency Services</a></li>
-              <li><a href="services/tree-health-care.html">Tree Health Care</a></li>
-              <li><a href="services/tree-planting.html">Tree Planting</a></li>
-            </ul>
-          </nav>
+        <div class="footer-links">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="services/tree-removal.html">Tree Removal</a></li>
+            <li><a href="services/pruning-trimming.html">Pruning &amp; Trimming</a></li>
+            <li><a href="services/stump-grinding.html">Stump Grinding</a></li>
+            <li><a href="services/emergency-services.html">Emergency Services</a></li>
+            <li><a href="services/tree-health-care.html">Tree Health Care</a></li>
+            <li><a href="services/tree-planting.html">Tree Planting</a></li>
+          </ul>
         </div>
 
         <!-- Column 4: Contact Info -->
-        <div class="footer__column">
-          <h3 class="footer__heading">Contact Us</h3>
-          <address class="footer__contact">
-            <div class="footer__contact-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-              <span>123 Canyon Rd<br>Salt Lake City, UT 84101</span>
-            </div>
-            <div class="footer__contact-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              <div>
-                <a href="tel:+18015551234">(801) 555-1234</a><br>
-                <small>Emergency: <a href="tel:+18015559111">(801) 555-9111</a></small>
-              </div>
-            </div>
-            <div class="footer__contact-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              <a href="mailto:info@canyoncrowntree.com">info@canyoncrowntree.com</a>
-            </div>
-            <div class="footer__contact-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-              <div>
-                <span>Mon - Fri: 8:00 AM - 5:00 PM</span><br>
-                <span>Sat: 9:00 AM - 2:00 PM</span><br>
-                <small>24/7 Emergency Service Available</small>
-              </div>
-            </div>
-          </address>
-          <div class="footer__certification">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#52B788" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M12 15l-3.5 2 .9-3.9L6 10.3l4-.3L12 6.5l2 3.5 4 .3-3.4 2.8.9 3.9z"/>
-              <circle cx="12" cy="12" r="10"/>
-            </svg>
-            <span>ISA Certified Arborist on Staff</span>
-          </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Canyon Rd, Salt Lake City, UT 84101</li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+18015551234">(801) 555-1234</a></li>
+            <li><i class="fas fa-exclamation-triangle"></i> Emergency: <a href="tel:+18015559111">(801) 555-9111</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@canyoncrowntree.com">info@canyoncrowntree.com</a></li>
+            <li><i class="fas fa-clock"></i> Mon-Fri 8am-5pm, Sat 9am-2pm</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Footer Bottom Bar -->
-      <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2025 Canyon Crown Tree. All rights reserved.</p>
-        <nav class="footer__legal" aria-label="Legal links">
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Canyon Crown Tree. All rights reserved.</p>
+        <div class="footer-legal">
           <a href="privacy-policy.html">Privacy Policy</a>
           <a href="terms-of-service.html">Terms of Service</a>
           <a href="sitemap.html">Sitemap</a>
-        </nav>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <polyline points="18 15 12 9 6 15"/>
-    </svg>
-  </button>
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
 
 </body>
 </html>
