@@ -1,459 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tree Care Services | Canyon Crown Tree | Salt Lake City, UT</title>
-    <meta name="description" content="Comprehensive tree care services in Salt Lake City: removal, pruning, stump grinding, emergency response, health care, and planting. ISA-certified arborists.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.canyoncrowntree.com/services">
-    <meta property="og:title" content="Tree Care Services | Canyon Crown Tree | Salt Lake City, UT">
-    <meta property="og:description" content="Comprehensive tree care services in Salt Lake City: removal, pruning, stump grinding, emergency response, health care, and planting. ISA-certified arborists.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.canyoncrowntree.com/services">
-    <meta property="og:locale" content="en_US">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-        :root{
-            --forest-green:#228B22;--dark-forest:#1a6b1a;--saddle-brown:#8B4513;--peru:#CD853F;
-            --sky-blue:#4A90D9;--white:#FFFFFF;--white-smoke:#F5F5F5;--dark-green:#1B3A1B;
-            --charcoal:#333333;--gray:#666666;
-            --font-heading:'Merriweather',Georgia,serif;--font-body:'Open Sans',Arial,sans-serif;
-            --shadow:0 2px 15px rgba(0,0,0,0.1);--shadow-lg:0 8px 30px rgba(0,0,0,0.15);
-            --radius:8px;--transition:0.3s ease;
-        }
-        html{scroll-behavior:smooth}
-        body{font-family:var(--font-body);color:var(--charcoal);line-height:1.7;background:var(--white)}
-        img{max-width:100%;height:auto;display:block}
-        a{text-decoration:none;color:inherit}
-        ul{list-style:none}
-        .container{max-width:1200px;margin:0 auto;padding:0 20px}
-
-        /* Buttons */
-        .btn{display:inline-block;padding:14px 32px;border-radius:var(--radius);font-family:var(--font-body);font-weight:700;font-size:1rem;cursor:pointer;transition:var(--transition);border:none;text-align:center}
-        .btn-primary{background:var(--forest-green);color:var(--white)}
-        .btn-primary:hover{background:var(--dark-forest);transform:translateY(-2px);box-shadow:var(--shadow)}
-        .btn-secondary{background:var(--saddle-brown);color:var(--white)}
-        .btn-secondary:hover{background:var(--peru);transform:translateY(-2px);box-shadow:var(--shadow)}
-        .btn-outline{background:transparent;color:var(--forest-green);border:2px solid var(--forest-green)}
-        .btn-outline:hover{background:var(--forest-green);color:var(--white);transform:translateY(-2px)}
-        .btn-white{background:var(--white);color:var(--forest-green)}
-        .btn-white:hover{background:var(--white-smoke);transform:translateY(-2px);box-shadow:var(--shadow)}
-
-        /* Top Bar */
-        .top-bar{background:var(--dark-green);color:var(--white);font-size:0.85rem;padding:8px 0}
-        .top-bar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-        .top-bar a{color:var(--white);transition:color var(--transition)}
-        .top-bar a:hover{color:var(--peru)}
-        .top-bar-contact{display:flex;gap:20px;align-items:center}
-
-        /* Header */
-        header{background:var(--white);box-shadow:var(--shadow);position:sticky;top:0;z-index:1000}
-        .header-inner{display:flex;justify-content:space-between;align-items:center;padding:15px 0}
-        .logo{font-family:var(--font-heading);font-size:1.6rem;font-weight:900;color:var(--forest-green);display:flex;align-items:center;gap:10px}
-        .logo .logo-icon{width:40px;height:40px;background:var(--forest-green);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-size:1.2rem}
-        nav ul{display:flex;gap:30px;align-items:center}
-        nav a{font-weight:600;font-size:0.95rem;color:var(--charcoal);transition:color var(--transition);position:relative}
-        nav a:hover,nav a.active{color:var(--forest-green)}
-        nav a.active::after{content:'';position:absolute;bottom:-5px;left:0;width:100%;height:2px;background:var(--forest-green)}
-        .nav-cta .btn{padding:10px 24px;font-size:0.9rem}
-        .mobile-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:5px}
-        .mobile-toggle span{width:28px;height:3px;background:var(--charcoal);border-radius:2px;transition:var(--transition)}
-
-        /* Page Hero */
-        .page-hero{background:linear-gradient(135deg,var(--dark-green) 0%,var(--forest-green) 100%);color:var(--white);padding:80px 0 60px;text-align:center}
-        .page-hero h1{font-family:var(--font-heading);font-size:2.8rem;margin-bottom:15px}
-        .page-hero p{font-size:1.15rem;opacity:0.9;max-width:650px;margin:0 auto 15px}
-        .breadcrumb{display:flex;justify-content:center;gap:10px;font-size:0.9rem;opacity:0.85}
-        .breadcrumb a{color:var(--white);transition:opacity var(--transition)}
-        .breadcrumb a:hover{opacity:1;text-decoration:underline}
-        .breadcrumb span{opacity:0.7}
-
-        /* Section Shared */
-        .section-title{font-family:var(--font-heading);font-size:2rem;text-align:center;margin-bottom:15px;color:var(--charcoal)}
-        .section-subtitle{text-align:center;color:var(--gray);max-width:650px;margin:0 auto 50px;font-size:1.05rem}
-
-        /* Services Grid */
-        .services-section{padding:80px 0}
-        .services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:30px}
-        .service-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);padding:40px 30px;transition:transform var(--transition),box-shadow var(--transition);border-top:4px solid var(--forest-green)}
-        .service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
-        .service-icon{width:70px;height:70px;background:linear-gradient(135deg,var(--forest-green),var(--dark-forest));border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:25px;font-size:1.8rem;color:var(--white)}
-        .service-card h3{font-family:var(--font-heading);font-size:1.3rem;margin-bottom:12px;color:var(--charcoal)}
-        .service-card .service-desc{color:var(--gray);margin-bottom:20px;font-size:0.95rem}
-        .service-card .feature-list{margin-bottom:25px}
-        .service-card .feature-list li{padding:6px 0;font-size:0.9rem;color:var(--charcoal);padding-left:22px;position:relative}
-        .service-card .feature-list li::before{content:'';position:absolute;left:0;top:12px;width:10px;height:10px;background:var(--forest-green);border-radius:50%;opacity:0.7}
-        .service-card .btn{width:100%}
-
-        /* Process Section */
-        .process-section{padding:80px 0;background:var(--white-smoke)}
-        .process-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:35px;margin-top:50px}
-        .process-step{text-align:center;padding:30px 20px;position:relative}
-        .step-number{width:65px;height:65px;background:var(--forest-green);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-size:1.5rem;font-weight:900;margin:0 auto 20px}
-        .process-step h3{font-family:var(--font-heading);font-size:1.15rem;margin-bottom:10px}
-        .process-step p{color:var(--gray);font-size:0.9rem}
-        .process-step:not(:last-child)::after{content:'';position:absolute;top:32px;right:-18px;width:35px;height:2px;background:var(--peru);display:block}
-
-        /* Service Area */
-        .service-area-section{padding:60px 0;text-align:center}
-        .service-area-section p{max-width:700px;margin:0 auto;color:var(--gray);font-size:1.05rem}
-        .area-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:25px}
-        .area-tag{background:var(--white-smoke);border:1px solid #ddd;padding:8px 18px;border-radius:30px;font-size:0.85rem;font-weight:600;color:var(--charcoal)}
-
-        /* CTA with Form */
-        .cta-form-section{background:linear-gradient(135deg,var(--dark-green) 0%,var(--forest-green) 100%);color:var(--white);padding:80px 0}
-        .cta-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-        .cta-form-text h2{font-family:var(--font-heading);font-size:2.2rem;margin-bottom:15px}
-        .cta-form-text p{font-size:1.1rem;opacity:0.9;margin-bottom:25px}
-        .cta-form-text .phone-cta{font-size:1.3rem;font-weight:700}
-        .cta-form-text .phone-cta a{color:var(--peru);transition:color var(--transition)}
-        .cta-form-text .phone-cta a:hover{color:var(--white)}
-        .quote-form{background:rgba(255,255,255,0.1);border-radius:var(--radius);padding:35px;backdrop-filter:blur(5px)}
-        .quote-form h3{font-family:var(--font-heading);font-size:1.3rem;margin-bottom:20px;text-align:center}
-        .form-group{margin-bottom:15px}
-        .form-group label{display:block;font-size:0.85rem;font-weight:600;margin-bottom:5px;opacity:0.9}
-        .form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 15px;border:1px solid rgba(255,255,255,0.3);border-radius:var(--radius);font-family:var(--font-body);font-size:0.95rem;background:rgba(255,255,255,0.15);color:var(--white);transition:var(--transition)}
-        .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.5)}
-        .form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--peru);background:rgba(255,255,255,0.2)}
-        .form-group select option{color:var(--charcoal);background:var(--white)}
-        .form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-        .quote-form .btn{width:100%;padding:15px;font-size:1.05rem;margin-top:5px}
-
-        /* Footer */
-        footer{background:var(--dark-green);color:var(--white);padding:60px 0 0}
-        .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;margin-bottom:40px}
-        .footer-col h3{font-family:var(--font-heading);font-size:1.1rem;margin-bottom:20px;color:var(--peru)}
-        .footer-col p,.footer-col li{font-size:0.9rem;opacity:0.85;line-height:1.8}
-        .footer-col a{color:var(--white);opacity:0.85;transition:opacity var(--transition)}
-        .footer-col a:hover{opacity:1;color:var(--peru)}
-        .footer-bottom{border-top:1px solid rgba(255,255,255,0.15);padding:20px 0;text-align:center;font-size:0.85rem;opacity:0.7}
-
-        @media(max-width:768px){
-            .mobile-toggle{display:flex}
-            nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:20px;box-shadow:var(--shadow);gap:15px}
-            nav ul.open{display:flex}
-            .page-hero h1{font-size:2rem}
-            .services-grid{grid-template-columns:1fr}
-            .cta-form-grid{grid-template-columns:1fr}
-            .cta-form-section h2{font-size:1.7rem}
-            .process-step:not(:last-child)::after{display:none}
-            .form-row{grid-template-columns:1fr}
-            .top-bar .container{justify-content:center;text-align:center}
-        }
-    </style>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="#1B3A1B" name="theme-color"/>
+<title>Tree Services | Canyon Crown Tree Co — Salt Lake City, UT</title>
+<meta name="description" content="Complete tree care services from Canyon Crown Tree Co: tree removal, pruning, stump grinding, emergency service, tree health care, and tree planting in Salt Lake City."/>
+<link rel="canonical" href="https://www.canyoncrowntreeco.com/services"/>
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <span>Serving Salt Lake City &amp; Northern Utah Since 2010</span>
-            <div class="top-bar-contact">
-                <a href="tel:8015551234">(801) 555-1234</a>
-                <a href="mailto:info@canyoncrowntree.com">info@canyoncrowntree.com</a>
-            </div>
-        </div>
-    </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="top-bar"><div class="container"><div class="top-bar-content"><div class="top-bar-left"><a href="tel:8015551234"><i class="fas fa-phone"></i> (801) 555-1234</a><span style="opacity:0.3">|</span><a href="mailto:info@canyoncrowntree.com"><i class="fas fa-envelope"></i> info@canyoncrowntree.com</a></div><div class="top-bar-right"><a href="https://facebook.com/canyoncrowntree" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://instagram.com/canyoncrowntree" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div></div></div></div>
+<header class="header" id="header"><div class="container"><nav class="nav"><a class="logo" href="index.html"><img class="logo-img" src="images/logo.svg" alt="Canyon Crown Tree Co Logo"/></a><button class="mobile-menu-btn" aria-label="Toggle menu"><span class="hamburger"></span></button><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li class="has-dropdown"><a class="active" href="services.html">Services <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="services/tree-removal.html">Tree Removal</a></li><li><a href="services/pruning-trimming.html">Pruning &amp; Trimming</a></li><li><a href="services/stump-grinding.html">Stump Grinding</a></li><li><a href="services/emergency-services.html">Emergency Services</a></li><li><a href="services/tree-health-care.html">Tree Health Care</a></li><li><a href="services/tree-planting.html">Tree Planting</a></li></ul></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a class="nav-phone" href="tel:8015551234"><i class="fas fa-phone"></i> (801) 555-1234</a></li><li><a class="btn nav-cta" href="contact.html">Free Estimate</a></li></ul></nav></div></header>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-inner">
-                <a href="index.html" class="logo">
-                    <div class="logo-icon">&#127794;</div>
-                    Canyon Crown Tree
-                </a>
-                <nav>
-                    <button class="mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav ul').classList.toggle('open')">
-                        <span></span><span></span><span></span>
-                    </button>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html" class="active">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="nav-cta"><a href="contact.html" class="btn btn-primary">Free Estimate</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<section class="page-hero"><div class="container"><h1>Our Tree Services</h1><nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Services</span></nav></div></section>
 
-    <main>
-        <!-- Page Hero -->
-        <section class="page-hero">
-            <div class="container">
-                <h1>Our Tree Care Services</h1>
-                <p>From routine pruning to emergency storm response, our ISA-certified arborists deliver professional tree care you can trust. Every service starts with a free consultation.</p>
-                <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <a href="index.html">Home</a>
-                    <span>/</span>
-                    <span>Services</span>
-                </nav>
-            </div>
-        </section>
+<main id="main">
+<section class="section">
+<div class="container">
+<div class="section-header text-center">
+<span class="section-label">Comprehensive Tree Care</span>
+<h2>Professional Services for Every Need</h2>
+<p class="section-subtitle">From routine maintenance to emergency response — our ISA-certified team provides complete tree care for residential and commercial properties.</p>
+</div>
+<div class="services-categories">
+<div class="service-category" data-animate="fade-in-up" data-delay="0">
+<div class="category-header"><div class="category-icon"><i class="fas fa-tree"></i></div><h3>Tree Removal</h3></div>
+<p style="font-size:0.9rem;color:var(--color-text-light);margin-bottom:var(--space-md)">Safe removal of hazardous, dead, or unwanted trees from your property. Crane-assisted for large jobs, rigging for confined spaces.</p>
+<a class="btn btn-outline btn-sm" href="services/tree-removal.html">Learn More <i class="fas fa-arrow-right"></i></a>
+</div>
+<div class="service-category" data-animate="fade-in-up" data-delay="1">
+<div class="category-header"><div class="category-icon"><i class="fas fa-cut"></i></div><h3>Pruning &amp; Trimming</h3></div>
+<p style="font-size:0.9rem;color:var(--color-text-light);margin-bottom:var(--space-md)">Expert pruning to improve tree health, appearance, and safety using ANSI A300 standards. Crown thinning, deadwood removal, structural pruning.</p>
+<a class="btn btn-outline btn-sm" href="services/pruning-trimming.html">Learn More <i class="fas fa-arrow-right"></i></a>
+</div>
+<div class="service-category" data-animate="fade-in-up" data-delay="2">
+<div class="category-header"><div class="category-icon"><i class="fas fa-circle-notch"></i></div><h3>Stump Grinding</h3></div>
+<p style="font-size:0.9rem;color:var(--color-text-light);margin-bottom:var(--space-md)">Complete stump removal to reclaim your yard space. Ground 6-12 inches below grade, area ready for replanting or landscaping.</p>
+<a class="btn btn-outline btn-sm" href="services/stump-grinding.html">Learn More <i class="fas fa-arrow-right"></i></a>
+</div>
+<div class="service-category" data-animate="fade-in-up" data-delay="3">
+<div class="category-header"><div class="category-icon"><i class="fas fa-bolt"></i></div><h3>Emergency Services</h3></div>
+<p style="font-size:0.9rem;color:var(--color-text-light);margin-bottom:var(--space-md)">24/7/365 emergency response for storm damage, fallen trees, and hazardous situations. Rapid response times, insurance claim documentation.</p>
+<a class="btn btn-outline btn-sm" href="services/emergency-services.html">Learn More <i class="fas fa-arrow-right"></i></a>
+</div>
+<div class="service-category" data-animate="fade-in-up" data-delay="4">
+<div class="category-header"><div class="category-icon"><i class="fas fa-heartbeat"></i></div><h3>Tree Health Care</h3></div>
+<p style="font-size:0.9rem;color:var(--color-text-light);margin-bottom:var(--space-md)">Diagnosis and treatment for insect infestations, fungal diseases, nutrient deficiencies, and iron chlorosis common in Utah.</p>
+<a class="btn btn-outline btn-sm" href="services/tree-health-care.html">Learn More <i class="fas fa-arrow-right"></i></a>
+</div>
+<div class="service-category" data-animate="fade-in-up" data-delay="5">
+<div class="category-header"><div class="category-icon"><i class="fas fa-seedling"></i></div><h3>Tree Planting</h3></div>
+<p style="font-size:0.9rem;color:var(--color-text-light);margin-bottom:var(--space-md)">Expert species selection and planting for Utah's climate. Site analysis, proper technique, and aftercare guidance for new trees.</p>
+<a class="btn btn-outline btn-sm" href="services/tree-planting.html">Learn More <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</section>
 
-        <!-- Services Grid -->
-        <section class="services-section">
-            <div class="container">
-                <h2 class="section-title">Comprehensive Tree Care Solutions</h2>
-                <p class="section-subtitle">Canyon Crown Tree offers a full range of professional tree services for residential and commercial properties throughout Salt Lake City and Northern Utah.</p>
+<section class="section cta"><div class="container"><div class="cta-content text-center"><h2>Ready to Get Started?</h2><p>Every project begins with a free on-site consultation. Let our certified arborists assess your needs and provide a transparent estimate.</p><div class="cta-buttons"><a class="btn btn-primary btn-lg" href="contact.html">Get Your Free Estimate</a><a class="btn btn-outline-light btn-lg" href="tel:8015551234"><i class="fas fa-phone"></i> (801) 555-1234</a></div></div></div></section>
+</main>
 
-                <div class="services-grid">
-                    <!-- Tree Removal -->
-                    <article class="service-card">
-                        <div class="service-icon">&#127795;</div>
-                        <h3>Tree Removal</h3>
-                        <p class="service-desc">Safe removal of hazardous, dead, or unwanted trees from your property. Our certified arborists use industry-leading techniques and equipment to handle removals of all sizes with precision and care.</p>
-                        <ul class="feature-list">
-                            <li>Hazardous tree assessment</li>
-                            <li>Crane-assisted removals</li>
-                            <li>Confined space rigging</li>
-                            <li>Complete debris cleanup</li>
-                            <li>Wood recycling and chip delivery</li>
-                            <li>Permit assistance when needed</li>
-                        </ul>
-                        <a href="services/tree-removal.html" class="btn btn-primary">Learn More</a>
-                    </article>
-
-                    <!-- Pruning & Trimming -->
-                    <article class="service-card">
-                        <div class="service-icon">&#9986;</div>
-                        <h3>Pruning &amp; Trimming</h3>
-                        <p class="service-desc">Expert pruning to improve tree health, appearance, and safety. Our arborists use science-based techniques following ANSI A300 standards to ensure proper cuts that promote strong, healthy growth.</p>
-                        <ul class="feature-list">
-                            <li>Crown thinning and cleaning</li>
-                            <li>Crown raising and reduction</li>
-                            <li>Deadwood removal</li>
-                            <li>Structural pruning</li>
-                            <li>Vista pruning for views</li>
-                            <li>Fruit tree pruning</li>
-                        </ul>
-                        <a href="services/pruning-trimming.html" class="btn btn-primary">Learn More</a>
-                    </article>
-
-                    <!-- Stump Grinding -->
-                    <article class="service-card">
-                        <div class="service-icon">&#128736;</div>
-                        <h3>Stump Grinding</h3>
-                        <p class="service-desc">Complete stump removal to reclaim your yard space. Our commercial-grade grinders handle stumps of any size, grinding them 6-12 inches below grade so you can replant, resod, or landscape the area.</p>
-                        <ul class="feature-list">
-                            <li>Stumps ground 6-12 inches below grade</li>
-                            <li>Any size stump handled</li>
-                            <li>Root grinding available</li>
-                            <li>Chips cleaned up or left as mulch</li>
-                            <li>Surface roots addressed</li>
-                            <li>Area ready for replanting</li>
-                        </ul>
-                        <a href="services/stump-grinding.html" class="btn btn-primary">Learn More</a>
-                    </article>
-
-                    <!-- Emergency Services -->
-                    <article class="service-card">
-                        <div class="service-icon">&#9888;</div>
-                        <h3>Emergency Tree Services</h3>
-                        <p class="service-desc">24/7 emergency response for storm damage and hazardous trees. Our crews are trained in emergency protocols and carry specialized equipment for the most challenging situations.</p>
-                        <ul class="feature-list">
-                            <li>24/7/365 availability</li>
-                            <li>Rapid response times</li>
-                            <li>Storm damage cleanup</li>
-                            <li>Trees on structures</li>
-                            <li>Power line clearance coordination</li>
-                            <li>Insurance claim documentation</li>
-                        </ul>
-                        <a href="services/emergency-services.html" class="btn btn-primary">Learn More</a>
-                    </article>
-
-                    <!-- Tree Health Care -->
-                    <article class="service-card">
-                        <div class="service-icon">&#127807;</div>
-                        <h3>Tree Health Care</h3>
-                        <p class="service-desc">Diagnosis and treatment to keep your trees thriving. Our plant health care program combines proactive monitoring with targeted treatments for issues common in Utah's climate and soil.</p>
-                        <ul class="feature-list">
-                            <li>Certified arborist diagnosis</li>
-                            <li>Deep root fertilization</li>
-                            <li>Insect and disease treatment</li>
-                            <li>Iron chlorosis treatment</li>
-                            <li>Drought stress management</li>
-                            <li>Ongoing monitoring programs</li>
-                        </ul>
-                        <a href="services/tree-health-care.html" class="btn btn-primary">Learn More</a>
-                    </article>
-
-                    <!-- Tree Planting -->
-                    <article class="service-card">
-                        <div class="service-icon">&#127793;</div>
-                        <h3>Tree Planting</h3>
-                        <p class="service-desc">Expert selection and planting of trees suited to Utah's climate. Our arborists help you choose species that thrive in local conditions, considering mature size, water needs, and your aesthetic goals.</p>
-                        <ul class="feature-list">
-                            <li>Species selection guidance</li>
-                            <li>Site analysis and preparation</li>
-                            <li>Proper planting technique</li>
-                            <li>Aftercare instructions</li>
-                            <li>Watering program setup</li>
-                            <li>Growth monitoring available</li>
-                        </ul>
-                        <a href="services/tree-planting.html" class="btn btn-primary">Learn More</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- How It Works -->
-        <section class="process-section">
-            <div class="container">
-                <h2 class="section-title">How It Works</h2>
-                <p class="section-subtitle">Our straightforward process ensures you receive expert tree care with complete transparency from start to finish.</p>
-
-                <div class="process-grid">
-                    <div class="process-step">
-                        <div class="step-number">1</div>
-                        <h3>Free Consultation</h3>
-                        <p>Contact us by phone or online. We'll schedule a convenient time for one of our certified arborists to visit your property at no cost or obligation.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">2</div>
-                        <h3>Expert Assessment</h3>
-                        <p>Your arborist will evaluate your trees, discuss your goals, explain all options, and provide a detailed, transparent written estimate on the spot.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">3</div>
-                        <h3>Professional Service</h3>
-                        <p>Our trained crew arrives on schedule with the right equipment. We follow ISA best practices and OSHA safety standards on every single job.</p>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">4</div>
-                        <h3>Complete Cleanup</h3>
-                        <p>We remove all debris, rake the area, and leave your property cleaner than we found it. All wood and green waste is recycled responsibly.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Service Area -->
-        <section class="service-area-section">
-            <div class="container">
-                <h2 class="section-title">Proudly Serving Northern Utah</h2>
-                <p>Canyon Crown Tree provides professional tree care services throughout Salt Lake City and the surrounding communities of Northern Utah. No matter where you are in our service area, our ISA-certified arborists bring the same expert care and attention to detail.</p>
-                <div class="area-tags">
-                    <span class="area-tag">Salt Lake City</span>
-                    <span class="area-tag">Sandy</span>
-                    <span class="area-tag">Draper</span>
-                    <span class="area-tag">Murray</span>
-                    <span class="area-tag">Cottonwood Heights</span>
-                    <span class="area-tag">Holladay</span>
-                    <span class="area-tag">Millcreek</span>
-                    <span class="area-tag">West Valley City</span>
-                    <span class="area-tag">South Jordan</span>
-                    <span class="area-tag">Riverton</span>
-                    <span class="area-tag">Park City</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA with Quote Form -->
-        <section class="cta-form-section">
-            <div class="container">
-                <div class="cta-form-grid">
-                    <div class="cta-form-text">
-                        <h2>Ready to Get Started?</h2>
-                        <p>Whether you need a routine pruning, a hazardous tree removed, or an expert opinion on your trees' health, we're here to help. Fill out the form to request your free, no-obligation estimate, or give us a call to speak directly with one of our arborists.</p>
-                        <p class="phone-cta">Call us today: <a href="tel:8015551234">(801) 555-1234</a></p>
-                    </div>
-                    <div class="quote-form">
-                        <h3>Request a Free Estimate</h3>
-                        <form action="#" method="post">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="firstName">First Name</label>
-                                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastName">Last Name</label>
-                                    <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="(801) 555-0000" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="service">Service Needed</label>
-                                <select id="service" name="service" required>
-                                    <option value="" disabled selected>Select a service</option>
-                                    <option value="tree-removal">Tree Removal</option>
-                                    <option value="pruning">Pruning &amp; Trimming</option>
-                                    <option value="stump-grinding">Stump Grinding</option>
-                                    <option value="emergency">Emergency Service</option>
-                                    <option value="health-care">Tree Health Care</option>
-                                    <option value="planting">Tree Planting</option>
-                                    <option value="other">Other / Not Sure</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Tell Us About Your Project</label>
-                                <textarea id="message" name="message" rows="4" placeholder="Describe your tree care needs..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-secondary">Get My Free Estimate</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Canyon Crown Tree</h3>
-                    <p>Salt Lake City's trusted tree care professionals since 2010. ISA-certified arborists committed to safety, quality, and environmental stewardship.</p>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services/tree-removal.html">Tree Removal</a></li>
-                        <li><a href="services/pruning-trimming.html">Pruning &amp; Trimming</a></li>
-                        <li><a href="services/stump-grinding.html">Stump Grinding</a></li>
-                        <li><a href="services/emergency-services.html">Emergency Services</a></li>
-                        <li><a href="services/tree-health-care.html">Tree Health Care</a></li>
-                        <li><a href="services/tree-planting.html">Tree Planting</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="gallery.html">Project Gallery</a></li>
-                        <li><a href="blog.html">Blog &amp; Tips</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="contact.html">Free Estimate</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact Us</h3>
-                    <p>123 Canyon Rd<br>Salt Lake City, UT 84101</p>
-                    <p><a href="tel:8015551234">(801) 555-1234</a></p>
-                    <p><a href="tel:8015559111">Emergency: (801) 555-9111</a></p>
-                    <p><a href="mailto:info@canyoncrowntree.com">info@canyoncrowntree.com</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Canyon Crown Tree. All rights reserved. Licensed, Bonded &amp; Insured. ISA-Certified Arborists.</p>
-            </div>
-        </div>
-    </footer>
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-about"><a class="footer-logo" href="index.html"><img class="logo-img" src="images/logo-white.svg" alt="Canyon Crown Tree Co"/></a><p>ISA Certified tree care in Salt Lake City since 2010.</p></div><div class="footer-links"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-links"><h4>Services</h4><ul><li><a href="services/tree-removal.html">Tree Removal</a></li><li><a href="services/pruning-trimming.html">Pruning</a></li><li><a href="services/emergency-services.html">Emergency</a></li></ul></div><div class="footer-contact"><h4>Contact</h4><address><p><i class="fas fa-phone"></i> <a href="tel:8015551234">(801) 555-1234</a></p><p><i class="fas fa-envelope"></i> <a href="mailto:info@canyoncrowntree.com">info@canyoncrowntree.com</a></p></address></div></div><div class="footer-bottom"><div class="footer-bottom-content"><p>&copy; <span id="currentYear"></span> Canyon Crown Tree Co. All Rights Reserved.</p></div></div></div></footer>
+<a class="back-to-top" href="#" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /canyon-crown-assets/
 
-Sitemap: https://canyon-crown-tree.vercel.app/sitemap.xml
+Sitemap: https://www.canyoncrowntreeco.com/sitemap.xml

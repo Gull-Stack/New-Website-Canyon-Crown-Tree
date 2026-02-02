@@ -1,367 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Gallery | Canyon Crown Tree | Salt Lake City Tree Care</title>
-    <meta name="description" content="View Canyon Crown Tree's project gallery showcasing tree removal, pruning, stump grinding, and more across Salt Lake City and Northern Utah.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.canyoncrowntree.com/gallery">
-    <meta property="og:title" content="Project Gallery | Canyon Crown Tree | Salt Lake City Tree Care">
-    <meta property="og:description" content="View Canyon Crown Tree's project gallery showcasing tree removal, pruning, stump grinding, and more across Salt Lake City and Northern Utah.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.canyoncrowntree.com/gallery">
-    <meta property="og:locale" content="en_US">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-        :root{
-            --forest-green:#228B22;--dark-forest:#1a6b1a;--saddle-brown:#8B4513;--peru:#CD853F;
-            --sky-blue:#4A90D9;--white:#FFFFFF;--white-smoke:#F5F5F5;--dark-green:#1B3A1B;
-            --charcoal:#333333;--gray:#666666;
-            --font-heading:'Merriweather',Georgia,serif;--font-body:'Open Sans',Arial,sans-serif;
-            --shadow:0 2px 15px rgba(0,0,0,0.1);--shadow-lg:0 8px 30px rgba(0,0,0,0.15);
-            --radius:8px;--transition:0.3s ease;
-        }
-        html{scroll-behavior:smooth}
-        body{font-family:var(--font-body);color:var(--charcoal);line-height:1.7;background:var(--white)}
-        img{max-width:100%;height:auto;display:block}
-        a{text-decoration:none;color:inherit}
-        ul{list-style:none}
-        .container{max-width:1200px;margin:0 auto;padding:0 20px}
-
-        /* Buttons */
-        .btn{display:inline-block;padding:14px 32px;border-radius:var(--radius);font-family:var(--font-body);font-weight:700;font-size:1rem;cursor:pointer;transition:var(--transition);border:none;text-align:center}
-        .btn-primary{background:var(--forest-green);color:var(--white)}
-        .btn-primary:hover{background:var(--dark-forest);transform:translateY(-2px);box-shadow:var(--shadow)}
-        .btn-secondary{background:var(--saddle-brown);color:var(--white)}
-        .btn-secondary:hover{background:var(--peru);transform:translateY(-2px);box-shadow:var(--shadow)}
-        .btn-outline{background:transparent;color:var(--forest-green);border:2px solid var(--forest-green)}
-        .btn-outline:hover{background:var(--forest-green);color:var(--white);transform:translateY(-2px)}
-        .btn-white{background:var(--white);color:var(--forest-green)}
-        .btn-white:hover{background:var(--white-smoke);transform:translateY(-2px);box-shadow:var(--shadow)}
-
-        /* Top Bar */
-        .top-bar{background:var(--dark-green);color:var(--white);font-size:0.85rem;padding:8px 0}
-        .top-bar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-        .top-bar a{color:var(--white);transition:color var(--transition)}
-        .top-bar a:hover{color:var(--peru)}
-        .top-bar-contact{display:flex;gap:20px;align-items:center}
-
-        /* Header */
-        header{background:var(--white);box-shadow:var(--shadow);position:sticky;top:0;z-index:1000}
-        .header-inner{display:flex;justify-content:space-between;align-items:center;padding:15px 0}
-        .logo{font-family:var(--font-heading);font-size:1.6rem;font-weight:900;color:var(--forest-green);display:flex;align-items:center;gap:10px}
-        .logo .logo-icon{width:40px;height:40px;background:var(--forest-green);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-size:1.2rem}
-        nav ul{display:flex;gap:30px;align-items:center}
-        nav a{font-weight:600;font-size:0.95rem;color:var(--charcoal);transition:color var(--transition);position:relative}
-        nav a:hover,nav a.active{color:var(--forest-green)}
-        nav a.active::after{content:'';position:absolute;bottom:-5px;left:0;width:100%;height:2px;background:var(--forest-green)}
-        .nav-cta .btn{padding:10px 24px;font-size:0.9rem}
-        .mobile-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:5px}
-        .mobile-toggle span{width:28px;height:3px;background:var(--charcoal);border-radius:2px;transition:var(--transition)}
-
-        /* Page Hero */
-        .page-hero{background:linear-gradient(135deg,var(--dark-green) 0%,var(--forest-green) 100%);color:var(--white);padding:80px 0 60px;text-align:center}
-        .page-hero h1{font-family:var(--font-heading);font-size:2.8rem;margin-bottom:15px}
-        .page-hero p{font-size:1.15rem;opacity:0.9;max-width:600px;margin:0 auto 15px}
-        .breadcrumb{display:flex;justify-content:center;gap:10px;font-size:0.9rem;opacity:0.85}
-        .breadcrumb a{color:var(--white);transition:opacity var(--transition)}
-        .breadcrumb a:hover{opacity:1;text-decoration:underline}
-        .breadcrumb span{opacity:0.7}
-
-        /* Gallery */
-        .gallery-section{padding:80px 0}
-        .filter-bar{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-bottom:50px}
-        .filter-btn{padding:10px 24px;border:2px solid var(--forest-green);background:transparent;color:var(--forest-green);font-family:var(--font-body);font-weight:600;font-size:0.9rem;border-radius:30px;cursor:pointer;transition:var(--transition)}
-        .filter-btn:hover,.filter-btn.active{background:var(--forest-green);color:var(--white)}
-        .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:25px}
-        .gallery-item{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);cursor:pointer;transition:transform var(--transition),box-shadow var(--transition)}
-        .gallery-item:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
-        .gallery-placeholder{width:100%;height:280px;background:linear-gradient(145deg,#c8d6c0 0%,#a3b899 30%,#8aad7e 60%,#6b9960 100%);display:flex;align-items:center;justify-content:center;position:relative}
-        .gallery-placeholder::before{content:'';width:60px;height:60px;border:3px solid rgba(255,255,255,0.4);border-radius:50%}
-        .gallery-placeholder::after{content:'Photo';position:absolute;font-size:0.85rem;color:rgba(255,255,255,0.6);font-weight:600;letter-spacing:1px;text-transform:uppercase}
-        .gallery-item[data-category="removal"] .gallery-placeholder{background:linear-gradient(145deg,#b8c4ae 0%,#8fa386 30%,#6e8c64 60%,#4d7542 100%)}
-        .gallery-item[data-category="pruning"] .gallery-placeholder{background:linear-gradient(145deg,#c4d4bc 0%,#9ab690 30%,#7aa86e 60%,#5a9a4c 100%)}
-        .gallery-item[data-category="stump"] .gallery-placeholder{background:linear-gradient(145deg,#d4c4a8 0%,#b8a07a 30%,#9c7c52 60%,#8B4513 100%)}
-        .gallery-item[data-category="emergency"] .gallery-placeholder{background:linear-gradient(145deg,#c4c8d4 0%,#8a92b0 30%,#5a6490 60%,#3a4a70 100%)}
-        .gallery-item[data-category="health"] .gallery-placeholder{background:linear-gradient(145deg,#c0d8c0 0%,#90c890 30%,#60b860 60%,#228B22 100%)}
-        .gallery-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(27,58,27,0.9));padding:50px 20px 20px;color:var(--white);transform:translateY(10px);opacity:0;transition:var(--transition)}
-        .gallery-item:hover .gallery-overlay{transform:translateY(0);opacity:1}
-        .gallery-overlay h3{font-family:var(--font-heading);font-size:1rem;margin-bottom:5px}
-        .gallery-overlay .service-tag{display:inline-block;padding:3px 12px;background:var(--forest-green);border-radius:20px;font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.5px}
-        .load-more-wrap{text-align:center;margin-top:50px}
-
-        /* CTA */
-        .cta-section{background:linear-gradient(135deg,var(--dark-green) 0%,var(--forest-green) 100%);color:var(--white);padding:80px 0;text-align:center}
-        .cta-section h2{font-family:var(--font-heading);font-size:2.2rem;margin-bottom:15px}
-        .cta-section p{font-size:1.1rem;margin-bottom:30px;max-width:600px;margin-left:auto;margin-right:auto;opacity:0.9}
-        .cta-buttons{display:flex;gap:15px;justify-content:center;flex-wrap:wrap}
-
-        /* Footer */
-        footer{background:var(--dark-green);color:var(--white);padding:60px 0 0}
-        .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;margin-bottom:40px}
-        .footer-col h3{font-family:var(--font-heading);font-size:1.1rem;margin-bottom:20px;color:var(--peru)}
-        .footer-col p,.footer-col li{font-size:0.9rem;opacity:0.85;line-height:1.8}
-        .footer-col a{color:var(--white);opacity:0.85;transition:opacity var(--transition)}
-        .footer-col a:hover{opacity:1;color:var(--peru)}
-        .footer-bottom{border-top:1px solid rgba(255,255,255,0.15);padding:20px 0;text-align:center;font-size:0.85rem;opacity:0.7}
-
-        @media(max-width:768px){
-            .mobile-toggle{display:flex}
-            nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:20px;box-shadow:var(--shadow);gap:15px}
-            nav ul.open{display:flex}
-            .page-hero h1{font-size:2rem}
-            .gallery-grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
-            .cta-section h2{font-size:1.7rem}
-            .top-bar .container{justify-content:center;text-align:center}
-        }
-    </style>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="#1B3A1B" name="theme-color"/>
+<title>Our Work Gallery | Canyon Crown Tree Co — Salt Lake City Tree Service</title>
+<meta name="description" content="View before and after photos of tree removal, pruning, stump grinding, and emergency tree services by Canyon Crown Tree Co in Salt Lake City, UT."/>
+<link rel="canonical" href="https://www.canyoncrowntreeco.com/gallery"/>
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <span>Serving Salt Lake City &amp; Northern Utah Since 2010</span>
-            <div class="top-bar-contact">
-                <a href="tel:8015551234">(801) 555-1234</a>
-                <a href="mailto:info@canyoncrowntree.com">info@canyoncrowntree.com</a>
-            </div>
-        </div>
-    </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="top-bar"><div class="container"><div class="top-bar-content"><div class="top-bar-left"><a href="tel:8015551234"><i class="fas fa-phone"></i> (801) 555-1234</a></div><div class="top-bar-right"><a href="https://instagram.com/canyoncrowntree" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div></div></div></div>
+<header class="header" id="header"><div class="container"><nav class="nav"><a class="logo" href="index.html"><img class="logo-img" src="images/logo.svg" alt="Canyon Crown Tree Co Logo"/></a><button class="mobile-menu-btn" aria-label="Toggle menu"><span class="hamburger"></span></button><ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li class="has-dropdown"><a href="services.html">Services <i class="fas fa-chevron-down"></i></a><ul class="dropdown"><li><a href="services/tree-removal.html">Tree Removal</a></li><li><a href="services/pruning-trimming.html">Pruning &amp; Trimming</a></li><li><a href="services/stump-grinding.html">Stump Grinding</a></li><li><a href="services/emergency-services.html">Emergency Services</a></li><li><a href="services/tree-health-care.html">Tree Health Care</a></li><li><a href="services/tree-planting.html">Tree Planting</a></li></ul></li><li><a class="active" href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn nav-cta" href="contact.html">Free Estimate</a></li></ul></nav></div></header>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-inner">
-                <a href="index.html" class="logo">
-                    <div class="logo-icon">&#127794;</div>
-                    Canyon Crown Tree
-                </a>
-                <nav>
-                    <button class="mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav ul').classList.toggle('open')">
-                        <span></span><span></span><span></span>
-                    </button>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="gallery.html" class="active">Gallery</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="nav-cta"><a href="contact.html" class="btn btn-primary">Free Estimate</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<section class="page-hero"><div class="container"><h1>Our Work Gallery</h1><nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Gallery</span></nav></div></section>
 
-    <main>
-        <!-- Page Hero -->
-        <section class="page-hero">
-            <div class="container">
-                <h1>Our Work</h1>
-                <p>Browse our recent tree care projects across Salt Lake City and Northern Utah.</p>
-                <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <a href="index.html">Home</a>
-                    <span>/</span>
-                    <span>Gallery</span>
-                </nav>
-            </div>
-        </section>
+<main id="main">
+<section class="section">
+<div class="container">
+<div class="gallery-filters">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="tree-removal">Tree Removal</button>
+<button class="filter-btn" data-filter="pruning">Pruning</button>
+<button class="filter-btn" data-filter="stump-grinding">Stump Grinding</button>
+<button class="filter-btn" data-filter="emergency">Emergency</button>
+</div>
+<div class="gallery-grid">
+<div class="gallery-item" data-category="tree-removal" data-animate="fade-in-up">
+<div class="ba-slider"><img src="https://placehold.co/600x400/3d6b3d/ffffff?text=Before" alt="Before tree removal"/><div class="ba-after"><img src="https://placehold.co/600x400/8B4513/ffffff?text=After" alt="After tree removal"/></div><div class="ba-handle"></div><span class="ba-label ba-label-before">Before</span><span class="ba-label ba-label-after">After</span></div>
+<span class="gallery-label">Cottonwood Removal — Holladay</span>
+</div>
+<div class="gallery-item" data-category="tree-removal" data-animate="fade-in-up" data-delay="1">
+<div class="ba-slider"><img src="https://placehold.co/600x400/2a4f2a/ffffff?text=Before" alt="Before tree removal"/><div class="ba-after"><img src="https://placehold.co/600x400/6d350f/ffffff?text=After" alt="After tree removal"/></div><div class="ba-handle"></div><span class="ba-label ba-label-before">Before</span><span class="ba-label ba-label-after">After</span></div>
+<span class="gallery-label">Pine Removal — Sandy</span>
+</div>
+<div class="gallery-item" data-category="pruning" data-animate="fade-in-up" data-delay="2">
+<div class="ba-slider"><img src="https://placehold.co/600x400/3d6b3d/ffffff?text=Before" alt="Before pruning"/><div class="ba-after"><img src="https://placehold.co/600x400/8B4513/ffffff?text=After" alt="After pruning"/></div><div class="ba-handle"></div><span class="ba-label ba-label-before">Before</span><span class="ba-label ba-label-after">After</span></div>
+<span class="gallery-label">Crown Thinning — Millcreek</span>
+</div>
+<div class="gallery-item" data-category="pruning" data-animate="fade-in-up">
+<div class="ba-slider"><img src="https://placehold.co/600x400/2a4f2a/ffffff?text=Before" alt="Before pruning"/><div class="ba-after"><img src="https://placehold.co/600x400/6d350f/ffffff?text=After" alt="After pruning"/></div><div class="ba-handle"></div><span class="ba-label ba-label-before">Before</span><span class="ba-label ba-label-after">After</span></div>
+<span class="gallery-label">Maple Pruning — Cottonwood Heights</span>
+</div>
+<div class="gallery-item" data-category="stump-grinding" data-animate="fade-in-up" data-delay="1">
+<div class="ba-slider"><img src="https://placehold.co/600x400/3d6b3d/ffffff?text=Before" alt="Before stump grinding"/><div class="ba-after"><img src="https://placehold.co/600x400/8B4513/ffffff?text=After" alt="After stump grinding"/></div><div class="ba-handle"></div><span class="ba-label ba-label-before">Before</span><span class="ba-label ba-label-after">After</span></div>
+<span class="gallery-label">Stump Removal — Draper</span>
+</div>
+<div class="gallery-item" data-category="emergency" data-animate="fade-in-up" data-delay="2">
+<div class="ba-slider"><img src="https://placehold.co/600x400/2a4f2a/ffffff?text=Before" alt="Before emergency cleanup"/><div class="ba-after"><img src="https://placehold.co/600x400/6d350f/ffffff?text=After" alt="After emergency cleanup"/></div><div class="ba-handle"></div><span class="ba-label ba-label-before">Before</span><span class="ba-label ba-label-after">After</span></div>
+<span class="gallery-label">Storm Damage — Salt Lake City</span>
+</div>
+<div class="gallery-item" data-category="tree-removal" data-animate="fade-in-up">
+<div class="ba-slider"><img src="https://placehold.co/600x400/3d6b3d/ffffff?text=Before" alt="Before"/><div class="ba-after"><img src="https://placehold.co/600x400/8B4513/ffffff?text=After" alt="After"/></div><div class="ba-handle"></div><span class="ba-label ba-label-before">Before</span><span class="ba-label ba-label-after">After</span></div>
+<span class="gallery-label">Multi-Tree Removal — Murray</span>
+</div>
+<div class="gallery-item" data-category="emergency" data-animate="fade-in-up" data-delay="1">
+<div class="ba-slider"><img src="https://placehold.co/600x400/2a4f2a/ffffff?text=Before" alt="Before"/><div class="ba-after"><img src="https://placehold.co/600x400/6d350f/ffffff?text=After" alt="After"/></div><div class="ba-handle"></div><span class="ba-label ba-label-before">Before</span><span class="ba-label ba-label-after">After</span></div>
+<span class="gallery-label">Fallen Tree on Fence — Holladay</span>
+</div>
+</div>
+<p class="disclaimer" style="text-align:center;margin-top:var(--space-2xl);font-size:0.85rem;color:var(--color-text-muted)">Photos are from actual Canyon Crown Tree Co projects. Results may vary depending on tree species, condition, and site.</p>
+</div>
+</section>
 
-        <!-- Gallery Section -->
-        <section class="gallery-section">
-            <div class="container">
-                <!-- Filter Buttons -->
-                <div class="filter-bar" role="toolbar" aria-label="Gallery filter">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="removal">Tree Removal</button>
-                    <button class="filter-btn" data-filter="pruning">Pruning</button>
-                    <button class="filter-btn" data-filter="stump">Stump Grinding</button>
-                    <button class="filter-btn" data-filter="emergency">Emergency</button>
-                    <button class="filter-btn" data-filter="health">Health Care</button>
-                </div>
+<section class="section cta"><div class="container"><div class="cta-content text-center"><h2>See How We Can Help Your Property</h2><p>Schedule a free on-site consultation to discuss your tree care needs with a certified arborist.</p><div class="cta-buttons"><a class="btn btn-primary btn-lg" href="contact.html">Get Your Free Estimate</a></div></div></div></section>
+</main>
 
-                <!-- Gallery Grid: 12 Items -->
-                <div class="gallery-grid" id="galleryGrid">
-                    <article class="gallery-item" data-category="removal">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Hazardous Cottonwood Removal - Holladay</h3>
-                            <span class="service-tag">Tree Removal</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="pruning">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Heritage Oak Crown Reduction - Salt Lake City</h3>
-                            <span class="service-tag">Pruning</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="stump">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Triple Stump Grinding - Sandy</h3>
-                            <span class="service-tag">Stump Grinding</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="emergency">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Storm Damage Emergency - Millcreek</h3>
-                            <span class="service-tag">Emergency</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="health">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Elm Disease Treatment - Draper</h3>
-                            <span class="service-tag">Health Care</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="removal">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Multi-Trunk Willow Removal - Murray</h3>
-                            <span class="service-tag">Tree Removal</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="pruning">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Mature Maple Canopy Thinning - Cottonwood Heights</h3>
-                            <span class="service-tag">Pruning</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="removal">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Crane-Assisted Pine Removal - Park City</h3>
-                            <span class="service-tag">Tree Removal</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="stump">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Large Root Ball Grinding - South Jordan</h3>
-                            <span class="service-tag">Stump Grinding</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="emergency">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Wind Damage Tree on Roof - West Valley City</h3>
-                            <span class="service-tag">Emergency</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="health">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Iron Chlorosis Treatment - Riverton</h3>
-                            <span class="service-tag">Health Care</span>
-                        </div>
-                    </article>
-                    <article class="gallery-item" data-category="pruning">
-                        <div class="gallery-placeholder"></div>
-                        <div class="gallery-overlay">
-                            <h3>Fruit Tree Pruning Program - Sugar House</h3>
-                            <span class="service-tag">Pruning</span>
-                        </div>
-                    </article>
-                </div>
+<div class="lightbox"><button class="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button><img src="" alt="Gallery image"/></div>
 
-                <!-- Load More -->
-                <div class="load-more-wrap">
-                    <button class="btn btn-outline" id="loadMoreBtn">View More Projects</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <h2>Have a Tree Project? Get Your Free Quote</h2>
-                <p>Whether it's a routine trim or an emergency removal, our ISA-certified arborists are ready to help. Contact us for a free, no-obligation estimate.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-white">Request Free Estimate</a>
-                    <a href="tel:8015551234" class="btn btn-secondary">Call (801) 555-1234</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Canyon Crown Tree</h3>
-                    <p>Salt Lake City's trusted tree care professionals since 2010. ISA-certified arborists committed to safety, quality, and environmental stewardship.</p>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services/tree-removal.html">Tree Removal</a></li>
-                        <li><a href="services/pruning-trimming.html">Pruning &amp; Trimming</a></li>
-                        <li><a href="services/stump-grinding.html">Stump Grinding</a></li>
-                        <li><a href="services/emergency-services.html">Emergency Services</a></li>
-                        <li><a href="services/tree-health-care.html">Tree Health Care</a></li>
-                        <li><a href="services/tree-planting.html">Tree Planting</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="gallery.html">Project Gallery</a></li>
-                        <li><a href="blog.html">Blog &amp; Tips</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="contact.html">Free Estimate</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact Us</h3>
-                    <p>123 Canyon Rd<br>Salt Lake City, UT 84101</p>
-                    <p><a href="tel:8015551234">(801) 555-1234</a></p>
-                    <p><a href="tel:8015559111">Emergency: (801) 555-9111</a></p>
-                    <p><a href="mailto:info@canyoncrowntree.com">info@canyoncrowntree.com</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Canyon Crown Tree. All rights reserved. Licensed, Bonded &amp; Insured. ISA-Certified Arborists.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Filter functionality
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        filterBtns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                filterBtns.forEach(function(b) { b.classList.remove('active'); });
-                btn.classList.add('active');
-                var filter = btn.getAttribute('data-filter');
-                galleryItems.forEach(function(item) {
-                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Load More
-        document.getElementById('loadMoreBtn').addEventListener('click', function() {
-            this.textContent = 'No More Projects to Load';
-            this.disabled = true;
-            this.style.opacity = '0.5';
-            this.style.cursor = 'default';
-        });
-    </script>
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-about"><a class="footer-logo" href="index.html"><img class="logo-img" src="images/logo-white.svg" alt="Canyon Crown Tree Co"/></a><p>ISA Certified tree care in Salt Lake City since 2010.</p></div><div class="footer-links"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-links"><h4>Services</h4><ul><li><a href="services/tree-removal.html">Tree Removal</a></li><li><a href="services/pruning-trimming.html">Pruning</a></li><li><a href="services/emergency-services.html">Emergency</a></li></ul></div><div class="footer-contact"><h4>Contact</h4><address><p><i class="fas fa-phone"></i> <a href="tel:8015551234">(801) 555-1234</a></p></address></div></div><div class="footer-bottom"><div class="footer-bottom-content"><p>&copy; <span id="currentYear"></span> Canyon Crown Tree Co. All Rights Reserved.</p></div></div></div></footer>
+<a class="back-to-top" href="#" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+<script src="js/main.js"></script>
 </body>
 </html>
