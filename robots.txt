@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.canyoncrowntreeco.com/sitemap.xml
+# Sitemap
+Sitemap: https://canyoncrowntreeco.com/sitemap.xml
+
+# Google Search Console Verification
+# Add verification meta tag or file when setting up GSC
