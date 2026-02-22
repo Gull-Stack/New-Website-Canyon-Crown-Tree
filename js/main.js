@@ -365,19 +365,29 @@ function initFormValidation() {
       const btn = form.querySelector('[type="submit"]');
       const data = new FormData(form);
       if (btn) { btn.textContent = 'Sending...'; btn.disabled = true; }
-      data.append('_subject', 'New Lead from CanyonCrownTreeCo.com');
-      data.append('_replyto', data.get('email'));
-      fetch('https://formspree.io/f/mlgwdzeo', {
+      // Submit to SuperTool Lead Capture API
+      const fields = Object.fromEntries(data.entries());
+      const payload = {
+        firstName: fields.firstName || '',
+        lastName: fields.lastName || '',
+        email: fields.email || '',
+        phone: fields.phone || '',
+        service: fields.service || '',
+        message: fields.message || '',
+        sourceSite: 'canyoncrowntreeco.com',
+        sourceUrl: window.location.href,
+        formName: 'Contact Form',
+      };
+      fetch('https://backend-production-5ad2.up.railway.app/api/public/leads/6e069ec0-764d-4679-a1cf-3cde289268d1', {
         method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      }).then(r => {
-        if (r.ok) {
+        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+      }).then(r => r.json()).then(result => {
+        if (result.ok) {
           if (btn) btn.textContent = 'Message Sent! ✓';
           form.reset();
         } else {
           // Fallback to mailto
-          const fields = Object.fromEntries(data.entries());
           const subject = encodeURIComponent('Contact from ' + (fields.firstName || '') + ' ' + (fields.lastName || ''));
           const body = encodeURIComponent('Name: ' + (fields.firstName||'') + ' ' + (fields.lastName||'') + '\\nEmail: ' + (fields.email||'') + '\\nPhone: ' + (fields.phone||'') + '\\nService: ' + (fields.service||'') + '\\nMessage: ' + (fields.message||''));
           window.location.href = 'mailto:canyoncrowntreeco@gmail.com?subject=' + subject + '&body=' + body;
