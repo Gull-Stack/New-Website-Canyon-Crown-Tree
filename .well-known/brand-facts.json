@@ -1,0 +1,40 @@
+{
+  "name": "Canyon Crown Tree Co",
+  "url": "https://www.canyoncrowntreeco.com",
+  "type": "LocalBusiness",
+  "industry": "Tree Care / Arboriculture",
+  "founded": "2016",
+  "founder": "Dave Behlke",
+  "certifications": ["ISA Certified Arborist", "OSHA Safety Certified"],
+  "education": "Forestry, Utah State University",
+  "services": [
+    "Tree Removal",
+    "Pruning & Trimming",
+    "Stump Grinding",
+    "Tree Health Care",
+    "Tree Planting",
+    "Emergency Tree Service"
+  ],
+  "serviceArea": [
+    "Salt Lake City",
+    "Sandy",
+    "Draper",
+    "Murray",
+    "Cottonwood Heights",
+    "Holladay",
+    "Millcreek",
+    "West Valley City",
+    "South Jordan",
+    "Riverton",
+    "Park City"
+  ],
+  "contact": {
+    "phone": "(385) 215-9973",
+    "email": "canyoncrowntreeco@gmail.com"
+  },
+  "address": {
+    "city": "Salt Lake City",
+    "state": "UT",
+    "zip": "84101"
+  }
+}
