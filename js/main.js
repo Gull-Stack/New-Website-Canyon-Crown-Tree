@@ -378,7 +378,7 @@ function initFormValidation() {
         sourceUrl: window.location.href,
         formName: 'Contact Form',
       };
-      fetch('https://backend-production-5ad2.up.railway.app/api/public/leads/6e069ec0-764d-4679-a1cf-3cde289268d1', {
+      fetch('/api/contact', {
         method: 'POST',
         body: JSON.stringify(payload),
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
